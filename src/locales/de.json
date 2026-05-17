@@ -148,6 +148,21 @@
       "ctaTitle": "Bereit für smarte E-Mail-Automatisierung?",
       "ctaDescription": "Kontaktieren Sie uns noch heute für eine persönliche Demo von HABB AI Lösungen."
     },
+    "habbOne": {
+      "sectionTitle": "HABB One",
+      "productName": "HABB One – ERP für Schweizer KMU-Werkstätten",
+      "tagline": "Modulares, zweisprachiges ERP – Multi-Tenant, ab Tag 1 produktiv",
+      "overviewTitle": "Produktübersicht",
+      "overviewText": "HABB One ist ein modulares, zweisprachiges ERP für Schweizer KMU-Werkstätten. Multi-Tenant und ab Tag 1 produktiv – von CRM und Auftragsabwicklung über Offerten und Rechnungen mit Schweizer QR-Bill bis hin zu Werkstatt-Plan, Personal-Plan, Zeiterfassung und Geschäftsberichten.\nMitarbeitende stempeln sich per 4-stelliger PIN am iPad-Kiosk ein und aus. Das Backoffice sieht in Echtzeit Umsatz, Aufträge, Auslastung, Anwesenheit, Saldi, Ferien und Warnungen.\nMonatsreports und Dokumente lassen sich als CSV, Excel oder PDF mit Firmenlogo exportieren. Erste Referenz-Installation: Tschannen Spritzwerk AG, Burgdorf.",
+      "keyFeaturesTitle": "Hauptfunktionen",
+      "keyFeatures": "[{\"icon\":\"Clock\",\"title\":\"Zeiterfassung & iPad-Kiosk\",\"description\":\"Mitarbeitende stempeln per 4-stelliger PIN ein und aus – inkl. Echtzeit-Anwesenheit, Saldi und Ferien im Backoffice.\"},{\"icon\":\"Users\",\"title\":\"CRM & Auftragsabwicklung\",\"description\":\"Kunden, Aufträge und Werkstatt-Durchlauf zentral verwalten – vom Erstkontakt bis zur Auslieferung.\"},{\"icon\":\"FileText\",\"title\":\"Offerten & QR-Rechnungen\",\"description\":\"Offerten erstellen und Rechnungen mit Schweizer QR-Bill versenden – ohne Medienbruch.\"},{\"icon\":\"Calendar\",\"title\":\"Werkstatt- & Personal-Plan\",\"description\":\"Der Auto-Scheduler plant Aufträge und Personal effizient ein und zeigt die Auslastung auf einen Blick.\"},{\"icon\":\"BarChart3\",\"title\":\"Geschäftsberichte & Export\",\"description\":\"Umsatz-, Auftrags- und Anwesenheitsberichte als CSV, Excel oder PDF mit Firmenlogo.\"},{\"icon\":\"ShieldCheck\",\"title\":\"Multi-Tenant & schweizkonform\",\"description\":\"Mandantenfähig, zweisprachig (DE/EN), Zeitzone Europe/Zurich – produktiv ab Tag 1.\"}]",
+      "backToServices": "Zurück zu den Dienstleistungen",
+      "ctaTitle": "Interesse an HABB One?",
+      "ctaDescription": "HABB One ist auf Anfrage verfügbar. Kontaktieren Sie uns für eine persönliche Vorstellung und weitere Informationen.",
+      "teaserTitle": "HABB One – unser ERP für KMU-Werkstätten",
+      "teaserText": "Modulares, zweisprachiges ERP: Zeiterfassung, CRM, Offerten, QR-Rechnungen, Werkstatt-Plan und Berichte – ab Tag 1 produktiv. Auf Anfrage verfügbar.",
+      "teaserCta": "Mehr erfahren"
+    },
     "cta": {
       "title": "Benötigen Sie eine individuelle Lösung?",
       "description": "Kontaktieren Sie unser Team, um Ihre spezifischen Anforderungen zu besprechen.",

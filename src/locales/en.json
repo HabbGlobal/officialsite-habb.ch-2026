@@ -148,6 +148,21 @@
       "ctaTitle": "Ready for Smart Email Automation?",
         "ctaDescription": "Contact us today for a personal demo of HABB AI Solutions."
     },
+    "habbOne": {
+      "sectionTitle": "HABB One",
+      "productName": "HABB One – ERP for Swiss SME Workshops",
+      "tagline": "Modular, bilingual ERP – multi-tenant, productive from day one",
+      "overviewTitle": "Product Overview",
+      "overviewText": "HABB One is a modular, bilingual ERP for Swiss SME workshops. Multi-tenant and productive from day one – covering CRM and order processing, quotations and invoices with Swiss QR-bill, workshop planning, staff planning, time tracking and business reports.\nEmployees clock in and out via a 4-digit PIN on the iPad kiosk. The back office sees revenue, orders, capacity, attendance, balances, holidays and alerts in real time.\nMonthly reports and documents can be exported as CSV, Excel or PDF with company logo. First reference installation: Tschannen Spritzwerk AG, Burgdorf.",
+      "keyFeaturesTitle": "Key Features",
+      "keyFeatures": "[{\"icon\":\"Clock\",\"title\":\"Time Tracking & iPad Kiosk\",\"description\":\"Employees clock in and out with a 4-digit PIN – including real-time attendance, balances and holidays in the back office.\"},{\"icon\":\"Users\",\"title\":\"CRM & Order Processing\",\"description\":\"Manage customers, orders and the workshop flow centrally – from first contact to delivery.\"},{\"icon\":\"FileText\",\"title\":\"Quotations & QR Invoices\",\"description\":\"Create quotations and send invoices with the Swiss QR-bill – without media breaks.\"},{\"icon\":\"Calendar\",\"title\":\"Workshop & Staff Planning\",\"description\":\"The auto-scheduler plans orders and staff efficiently and shows capacity at a glance.\"},{\"icon\":\"BarChart3\",\"title\":\"Business Reports & Export\",\"description\":\"Revenue, order and attendance reports as CSV, Excel or PDF with company logo.\"},{\"icon\":\"ShieldCheck\",\"title\":\"Multi-Tenant & Swiss-Compliant\",\"description\":\"Multi-tenant, bilingual (DE/EN), Europe/Zurich time zone – productive from day one.\"}]",
+      "backToServices": "Back to Services",
+      "ctaTitle": "Interested in HABB One?",
+      "ctaDescription": "HABB One is available on request. Contact us for a personal introduction and more information.",
+      "teaserTitle": "HABB One – our ERP for SME workshops",
+      "teaserText": "Modular, bilingual ERP: time tracking, CRM, quotations, QR invoices, workshop planning and reports – productive from day one. Available on request.",
+      "teaserCta": "Learn more"
+    },
     "cta": {
       "title": "Need a Custom Solution?",
       "description": "Contact our team to discuss your specific requirements.",

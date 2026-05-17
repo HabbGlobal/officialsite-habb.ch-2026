@@ -128,6 +128,34 @@ export default async function ServicesPage({ params }: PageProps) {
           </div>
         </div>
       </section>
+      {/* HABB One Product Highlight */}
+      <section className="section-padding bg-habb-gray-50">
+        <div className="container-wide">
+          <div className="rounded-2xl bg-white border border-habb-gray-100 shadow-sm p-8 lg:p-12 flex flex-col lg:flex-row lg:items-center gap-8">
+            <div className="w-16 h-16 rounded-2xl bg-swiss-red/10 flex items-center justify-center flex-shrink-0">
+              <Settings className="w-8 h-8 text-swiss-red" />
+            </div>
+            <div className="flex-1">
+              <span className="inline-block text-sm font-semibold text-swiss-red uppercase tracking-widest mb-2">
+                {t('services.habbOne.sectionTitle')}
+              </span>
+              <h2 className="text-2xl font-bold text-habb-gray-900 mb-3">
+                {t('services.habbOne.teaserTitle')}
+              </h2>
+              <p className="text-lg text-habb-gray-600">
+                {t('services.habbOne.teaserText')}
+              </p>
+            </div>
+            <Link href={`/${locale}/services/habb-one`} className="flex-shrink-0">
+              <Button size="lg">
+                {t('services.habbOne.teaserCta')}
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="section-padding bg-habb-gray-900 text-white">
         <div className="container-wide text-center">
