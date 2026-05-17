@@ -76,12 +76,14 @@ export default async function HabbOnePage({ params }: PageProps) {
       <section className="section-padding bg-gradient-to-br from-habb-gray-50 via-white to-habb-gray-50">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="min-w-0">
               <span className="inline-block text-sm font-semibold text-swiss-red uppercase tracking-widest mb-4">
                 {t('services.habbOne.sectionTitle')}
               </span>
-              <h1 className="text-habb-gray-900 mb-4">{t('services.habbOne.productName')}</h1>
-              <p className="text-xl font-medium text-swiss-red mb-6">
+              <h1 className="text-habb-gray-900 mb-4 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight break-words hyphens-auto">
+                {t('services.habbOne.productName')}
+              </h1>
+              <p className="text-lg sm:text-xl font-medium text-swiss-red mb-6">
                 {t('services.habbOne.tagline')}
               </p>
               <p className="text-lg text-habb-gray-600 mb-8">
