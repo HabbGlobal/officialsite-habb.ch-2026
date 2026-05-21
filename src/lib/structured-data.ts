@@ -1,7 +1,7 @@
 import { Locale } from './i18n'
 import { getSiteUrl } from './site'
 
-const NAME_DE = 'Habb Schweiz'
+const NAME_DE = 'Habb Switzerland'
 const NAME_EN = 'Habb Switzerland'
 const EMAIL = 'info@habb.ch'
 const PHONE = '+41799239772'

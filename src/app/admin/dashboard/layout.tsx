@@ -6,7 +6,7 @@ import { AdminHeader } from '@/components/admin/AdminHeader'
 export const dynamic = 'force-dynamic'
 
 export const metadata = {
-  title: 'Admin Dashboard | Habb.ch',
+  title: 'Admin Dashboard | Habb Switzerland',
 }
 
 export default async function AdminDashboardLayout({

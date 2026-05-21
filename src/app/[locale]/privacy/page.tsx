@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import { Locale } from '@/lib/i18n'
 import { getTranslations } from '@/lib/translations'
 import { buildPageMetadata } from '@/lib/seo'
+import { LegalContent } from '@/components/LegalContent'
 
 interface PageProps {
   params: Promise<{ locale: string }>
@@ -17,8 +18,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: t('privacy.title'),
     description:
       locale === 'de'
-        ? 'Datenschutzerklärung von Habb Schweiz – wie wir personenbezogene Daten erheben, nutzen und schützen.'
-        : 'Privacy policy of Habb Switzerland – how we collect, use and protect personal data.',
+        ? 'Datenschutzerklärung von Habb Switzerland – wie wir personenbezogene Daten erheben, bearbeiten und schützen (revDSG & DSGVO).'
+        : 'Privacy policy of Habb Switzerland – how we collect, process and protect personal data (revFADP & GDPR).',
   })
 }
 
@@ -27,32 +28,25 @@ export default async function PrivacyPage({ params }: PageProps) {
   const locale = localeParam as Locale
   const t = getTranslations(locale)
 
-  const sections = [
-    {
-      title: t('privacy.sections.intro.title'),
-      content: t('privacy.sections.intro.content'),
-    },
-    {
-      title: t('privacy.sections.collection.title'),
-      content: t('privacy.sections.collection.content'),
-    },
-    {
-      title: t('privacy.sections.usage.title'),
-      content: t('privacy.sections.usage.content'),
-    },
-    {
-      title: t('privacy.sections.security.title'),
-      content: t('privacy.sections.security.content'),
-    },
-    {
-      title: t('privacy.sections.rights.title'),
-      content: t('privacy.sections.rights.content'),
-    },
-    {
-      title: t('privacy.sections.contact.title'),
-      content: t('privacy.sections.contact.content'),
-    },
+  const sectionKeys = [
+    'intro',
+    'controller',
+    'collection',
+    'purposes',
+    'cookies',
+    'sharing',
+    'hosting',
+    'retention',
+    'security',
+    'rights',
+    'international',
+    'changes',
+    'contact',
   ]
+  const sections = sectionKeys.map((key) => ({
+    title: t(`privacy.sections.${key}.title`),
+    content: t(`privacy.sections.${key}.content`),
+  }))
 
   return (
     <>
@@ -62,7 +56,7 @@ export default async function PrivacyPage({ params }: PageProps) {
           <div className="max-w-3xl">
             <h1 className="text-habb-gray-900 mb-4">{t('privacy.title')}</h1>
             <p className="text-habb-gray-500">
-              {t('privacy.lastUpdated', { date: 'January 1, 2026' })}
+              {t('privacy.lastUpdated', { date: locale === 'de' ? '18. Mai 2026' : 'May 18, 2026' })}
             </p>
           </div>
         </div>
@@ -72,18 +66,7 @@ export default async function PrivacyPage({ params }: PageProps) {
       <section className="section-padding bg-white">
         <div className="container-wide">
           <div className="max-w-4xl">
-            <div className="space-y-12">
-              {sections.map((section, index) => (
-                <div key={index}>
-                  <h2 className="text-2xl font-semibold text-habb-gray-900 mb-4">
-                    {section.title}
-                  </h2>
-                  <p className="text-lg text-habb-gray-600 leading-relaxed">
-                    {section.content}
-                  </p>
-                </div>
-              ))}
-            </div>
+            <LegalContent sections={sections} />
 
             {/* Contact Info */}
             <div className="mt-16 p-8 bg-habb-gray-50 rounded-2xl">

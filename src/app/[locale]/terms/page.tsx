@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import { Locale } from '@/lib/i18n'
 import { getTranslations } from '@/lib/translations'
 import { buildPageMetadata } from '@/lib/seo'
+import { LegalContent } from '@/components/LegalContent'
 
 interface PageProps {
   params: Promise<{ locale: string }>
@@ -17,8 +18,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: t('terms.title'),
     description:
       locale === 'de'
-        ? 'Allgemeine Geschäftsbedingungen von Habb Schweiz für die Nutzung unserer Dienstleistungen.'
-        : 'Terms and conditions of Habb Switzerland for the use of our services.',
+        ? 'Allgemeine Geschäftsbedingungen von Habb Switzerland für die Nutzung der Website und unserer Dienstleistungen.'
+        : 'Terms and conditions of Habb Switzerland for the use of the website and our services.',
   })
 }
 
@@ -27,32 +28,25 @@ export default async function TermsPage({ params }: PageProps) {
   const locale = localeParam as Locale
   const t = getTranslations(locale)
 
-  const sections = [
-    {
-      title: t('terms.sections.acceptance.title'),
-      content: t('terms.sections.acceptance.content'),
-    },
-    {
-      title: t('terms.sections.services.title'),
-      content: t('terms.sections.services.content'),
-    },
-    {
-      title: t('terms.sections.intellectual.title'),
-      content: t('terms.sections.intellectual.content'),
-    },
-    {
-      title: t('terms.sections.liability.title'),
-      content: t('terms.sections.liability.content'),
-    },
-    {
-      title: t('terms.sections.governing.title'),
-      content: t('terms.sections.governing.content'),
-    },
-    {
-      title: t('terms.sections.changes.title'),
-      content: t('terms.sections.changes.content'),
-    },
+  const sectionKeys = [
+    'acceptance',
+    'services',
+    'quotes',
+    'obligations',
+    'prices',
+    'intellectual',
+    'warranty',
+    'liability',
+    'dataprotection',
+    'term',
+    'governing',
+    'changes',
+    'severability',
   ]
+  const sections = sectionKeys.map((key) => ({
+    title: t(`terms.sections.${key}.title`),
+    content: t(`terms.sections.${key}.content`),
+  }))
 
   return (
     <>
@@ -62,7 +56,7 @@ export default async function TermsPage({ params }: PageProps) {
           <div className="max-w-3xl">
             <h1 className="text-habb-gray-900 mb-4">{t('terms.title')}</h1>
             <p className="text-habb-gray-500">
-              {t('terms.lastUpdated', { date: 'January 1, 2026' })}
+              {t('terms.lastUpdated', { date: locale === 'de' ? '18. Mai 2026' : 'May 18, 2026' })}
             </p>
           </div>
         </div>
@@ -72,18 +66,7 @@ export default async function TermsPage({ params }: PageProps) {
       <section className="section-padding bg-white">
         <div className="container-wide">
           <div className="max-w-4xl">
-            <div className="space-y-12">
-              {sections.map((section, index) => (
-                <div key={index}>
-                  <h2 className="text-2xl font-semibold text-habb-gray-900 mb-4">
-                    {index + 1}. {section.title}
-                  </h2>
-                  <p className="text-lg text-habb-gray-600 leading-relaxed">
-                    {section.content}
-                  </p>
-                </div>
-              ))}
-            </div>
+            <LegalContent sections={sections} numbered />
 
             {/* Contact Info */}
             <div className="mt-16 p-8 bg-habb-gray-50 rounded-2xl">

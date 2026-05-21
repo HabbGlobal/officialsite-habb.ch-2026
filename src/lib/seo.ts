@@ -50,11 +50,11 @@ export function buildPageMetadata({
       title,
       description,
       url: canonical,
-      siteName: isGerman ? 'Habb Schweiz' : 'Habb Switzerland',
+      siteName: 'Habb Switzerland',
       locale: isGerman ? 'de_CH' : 'en_CH',
       alternateLocale: isGerman ? 'en_CH' : 'de_CH',
       type: ogType,
-      images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: 'Habb Schweiz' }],
+      images: [{ url: OG_IMAGE, width: 1200, height: 630, alt: 'Habb Switzerland' }],
     },
     twitter: {
       card: 'summary_large_image',

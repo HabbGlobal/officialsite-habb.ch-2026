@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: '%s | Habb Switzerland',
   },
   description: 'Habb Switzerland provides enterprise-grade technology and AI solutions built with Swiss precision, reliability, and innovation. Top class automation for Swiss companies.',
-  keywords: ['Habb', 'Habb Switzerland', 'Habb Schweiz', 'habb.ch', 'Swiss technology', 'cloud services', 'enterprise AI solutions', 'cybersecurity', 'automation Switzerland', 'Zürich software company'],
+  keywords: ['Habb', 'Habb Switzerland', 'habb.ch', 'Swiss technology', 'cloud services', 'enterprise AI solutions', 'cybersecurity', 'automation Switzerland', 'Zürich software company'],
   authors: [{ name: 'Habb Switzerland' }],
   creator: 'Habb Switzerland',
   metadataBase: new URL(getSiteUrl()),

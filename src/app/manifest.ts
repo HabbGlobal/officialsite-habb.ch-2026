@@ -2,10 +2,10 @@ import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Habb Schweiz',
+    name: 'Habb Switzerland',
     short_name: 'Habb',
     description:
-      'Habb Schweiz – KI-Automatisierung und Technologie-Lösungen für Schweizer Unternehmen.',
+      'Habb Switzerland – KI-Automatisierung und Technologie-Lösungen für Schweizer Unternehmen.',
     start_url: '/de',
     display: 'standalone',
     background_color: '#ffffff',

@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Admin Login | Habb.ch',
+  title: 'Admin Login | Habb Switzerland',
 }
 
 export default function AdminAuthLayout({

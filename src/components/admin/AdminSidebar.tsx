@@ -63,7 +63,7 @@ export function AdminSidebar() {
             </svg>
           </div>
           <div>
-            <span className="text-xl font-bold">Habb.ch</span>
+            <span className="text-xl font-bold">Habb Switzerland</span>
             <span className="block text-xs text-habb-gray-400">Admin Panel</span>
           </div>
         </Link>

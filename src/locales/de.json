@@ -10,14 +10,14 @@
     "contact": "Kontakt"
   },
   "footer": {
-    "company": "Habb.ch",
+    "company": "Habb Switzerland",
     "description": "Schweizer Präzision in Informationstechnologie. Wir liefern unternehmensgerechte Dienste mit Zuverlässigkeit und Innovation.",
     "quickLinks": "Schnelllinks",
     "legal": "Rechtliches",
     "privacy": "Datenschutz",
     "terms": "AGB",
     "adminLogin": "Admin Console",
-    "copyright": "© {year} Habb Schweiz. Alle Rechte vorbehalten.",
+    "copyright": "© {year} Habb Switzerland. Alle Rechte vorbehalten.",
     "swiss": "Mit Präzision in der Schweiz hergestellt"
   },
   "home": {
@@ -49,7 +49,7 @@
     },
     "about": {
       "title": "Vertrauen führender Organisationen",
-      "description": "Habb.ch liefert Technologielösungen, die höchsten Qualitäts- und Zuverlässigkeitsstandards entsprechen. Unser Schweizer Erbe treibt unser Engagement für Präzision und Exzellenz.",
+      "description": "Habb Switzerland liefert Technologielösungen, die höchsten Qualitäts- und Zuverlässigkeitsstandards entsprechen. Unser Schweizer Erbe treibt unser Engagement für Präzision und Exzellenz.",
       "stat1": "Jahre Erfahrung",
       "stat2": "Zufriedene Kunden",
       "stat3": "Projekte geliefert",
@@ -68,12 +68,12 @@
   },
   "about": {
     "hero": {
-      "title": "Über Habb.ch",
+      "title": "Über Habb Switzerland",
       "subtitle": "Schweizer Präzision trifft technologische Exzellenz"
     },
     "story": {
       "title": "Unsere Geschichte",
-      "p1": "Habb.ch wurde in der Schweiz gegründet und entstand aus der Vision, traditionelle Schweizer Werte wie Präzision, Zuverlässigkeit und Qualität mit moderner technologischer Innovation zu verbinden.",
+      "p1": "Habb Switzerland wurde in der Schweiz gegründet und entstand aus der Vision, traditionelle Schweizer Werte wie Präzision, Zuverlässigkeit und Qualität mit moderner technologischer Innovation zu verbinden.",
       "p2": "Als Brüder mit einem fundierten Hintergrund in Informatik und Wirtschaftsinformatik vereinen wir technisches Tiefenwissen mit betriebswirtschaftlichem Verständnis. Unser gemeinsames Ziel ist es, Schweizer Unternehmen dabei zu unterstützen, die Potenziale von KI-Automatisierung, digitalen Prozessen und modernen IT-Lösungen sinnvoll und nachhaltig zu nutzen.",
       "p3": "Wir sind überzeugt, dass Technologie Unternehmen stärken sollte und nicht komplizieren. Deshalb arbeitet unser Expertenteam konsequent daran, Lösungen zu entwickeln, die nicht nur technisch exzellent, sondern auch praxisnah, effizient und benutzerfreundlich sind.",
       "p4": "Heute bedienen wir Kunden aus verschiedenen Branchen und helfen ihnen, die digitale Landschaft mit Zuversicht und Erfolg zu navigieren."
@@ -225,28 +225,56 @@
     "lastUpdated": "Zuletzt aktualisiert: {date}",
     "sections": {
       "intro": {
-        "title": "Einführung",
-        "content": "Habb.ch verpflichtet sich zum Schutz Ihrer Privatsphäre. Diese Richtlinie erklärt, wie wir Ihre persönlichen Daten sammeln, verwenden und schützen."
+        "title": "Einführung und Geltungsbereich",
+        "content": "Habb Switzerland nimmt den Schutz Ihrer persönlichen Daten ernst. Diese Datenschutzerklärung informiert Sie darüber, welche Personendaten wir erheben, zu welchen Zwecken wir sie bearbeiten und welche Rechte Ihnen zustehen.\nSie gilt für die Website www.habb.ch sowie für alle damit verbundenen Dienstleistungen von Habb Switzerland. Massgebend sind das Schweizer Datenschutzgesetz (revDSG) sowie, soweit anwendbar, die Datenschutz-Grundverordnung der EU (DSGVO)."
+      },
+      "controller": {
+        "title": "Verantwortliche Stelle",
+        "content": "Verantwortlich für die Bearbeitung Ihrer Personendaten ist:\nHabb Switzerland, Sonnheimstrasse 6, 3415 Rüegsauschachen, Schweiz\nFür alle datenschutzbezogenen Anliegen erreichen Sie uns unter privacy@habb.ch."
       },
       "collection": {
-        "title": "Welche Daten wir sammeln",
-        "content": "Wir sammeln Informationen, die Sie direkt bereitstellen, wie Kontaktdaten bei Formularen, sowie technische Daten wie IP-Adressen und Browser-Informationen."
+        "title": "Welche Daten wir bearbeiten",
+        "content": "Wir bearbeiten ausschliesslich Daten, die für den Betrieb unserer Website und die Erbringung unserer Dienstleistungen erforderlich sind:\n• Kontakt- und Kommunikationsdaten, die Sie uns über das Kontaktformular oder per E-Mail übermitteln (z. B. Name, Firma, E-Mail-Adresse, Telefonnummer, Mitteilung)\n• Vertrags- und Kundendaten im Rahmen einer Geschäftsbeziehung\n• Technische Daten, die beim Besuch der Website automatisch anfallen (z. B. IP-Adresse, Datum und Uhrzeit des Zugriffs, Browsertyp, Betriebssystem, aufgerufene Seiten)\n• Nutzungsdaten aus Cookies und vergleichbaren Technologien"
       },
-      "usage": {
-        "title": "Wie wir Ihre Daten verwenden",
-        "content": "Wir verwenden Ihre Daten, um unsere Dienste bereitzustellen, mit Ihnen zu kommunizieren, unsere Angebote zu verbessern und gesetzliche Verpflichtungen zu erfüllen."
+      "purposes": {
+        "title": "Zwecke und Rechtsgrundlagen",
+        "content": "Wir bearbeiten Ihre Daten zu folgenden Zwecken:\n• Beantwortung Ihrer Anfragen und Kontaktaufnahme\n• Erbringung, Verwaltung und Abrechnung unserer Dienstleistungen\n• Betrieb, Sicherheit und Optimierung unserer Website\n• Erfüllung gesetzlicher Pflichten\nDie Bearbeitung stützt sich je nach Fall auf die Erfüllung eines Vertrags, ein überwiegendes berechtigtes Interesse, Ihre Einwilligung oder eine gesetzliche Verpflichtung."
+      },
+      "cookies": {
+        "title": "Cookies und Reichweitenmessung",
+        "content": "Unsere Website verwendet technisch notwendige Cookies, die für den ordnungsgemässen Betrieb erforderlich sind. Soweit wir Cookies oder Analysedienste zur Reichweitenmessung einsetzen, geschieht dies nur auf Grundlage Ihrer Einwilligung oder in anonymisierter Form.\nSie können Cookies in den Einstellungen Ihres Browsers jederzeit löschen oder deren Speicherung einschränken. Dies kann die Funktionalität der Website beeinträchtigen."
+      },
+      "sharing": {
+        "title": "Weitergabe an Dritte",
+        "content": "Wir verkaufen Ihre Personendaten nicht. Eine Weitergabe erfolgt nur, soweit dies zur Erbringung unserer Leistungen erforderlich oder gesetzlich vorgeschrieben ist:\n• An sorgfältig ausgewählte Auftragsbearbeiter (z. B. Hosting-, E-Mail- und IT-Dienstleister), die vertraglich zur Einhaltung des Datenschutzes verpflichtet sind\n• An Behörden oder Gerichte, soweit wir gesetzlich dazu verpflichtet sind"
+      },
+      "hosting": {
+        "title": "Hosting und Datenspeicherung",
+        "content": "Die Daten unserer Website und Dienstleistungen werden standardmässig in Rechenzentren in der EU oder wahlweise in der Schweiz gespeichert. Auf Anfrage bieten wir lokales Hosting sowie eine ausschliesslich in der Schweiz gelagerte Datenhaltung an.\nAlle eingesetzten Dienstleister werden sorgfältig ausgewählt und vertraglich auf ein angemessenes Datenschutzniveau verpflichtet."
+      },
+      "retention": {
+        "title": "Aufbewahrungsdauer",
+        "content": "Wir bearbeiten und speichern Personendaten nur so lange, wie es für die jeweiligen Zwecke erforderlich ist oder gesetzliche Aufbewahrungsfristen es verlangen. Danach werden die Daten gelöscht oder anonymisiert."
       },
       "security": {
         "title": "Datensicherheit",
-        "content": "Wir implementieren robuste Sicherheitsmassnahmen zum Schutz Ihrer Daten, einschliesslich Verschlüsselung, Zugriffskontrollen und regelmässiger Sicherheitsaudits."
+        "content": "Wir treffen angemessene technische und organisatorische Massnahmen, um Ihre Daten vor unbefugtem Zugriff, Verlust oder Missbrauch zu schützen. Dazu gehören insbesondere verschlüsselte Übertragung (TLS/SSL), Zugriffskontrollen, eine sichere Infrastruktur sowie regelmässige Überprüfungen.\nWir weisen darauf hin, dass die Datenübertragung im Internet trotz aller Sorgfalt nie vollständig sicher sein kann."
       },
       "rights": {
         "title": "Ihre Rechte",
-        "content": "Sie haben das Recht, auf Ihre persönlichen Daten zuzugreifen, sie zu korrigieren oder zu löschen. Kontaktieren Sie uns, um diese Rechte auszuüben."
+        "content": "Im Rahmen der anwendbaren Datenschutzgesetze stehen Ihnen folgende Rechte zu:\n• Auskunft über die zu Ihrer Person bearbeiteten Daten\n• Berichtigung unrichtiger Daten\n• Löschung oder Einschränkung der Bearbeitung\n• Herausgabe oder Übertragung Ihrer Daten\n• Widerspruch gegen bestimmte Bearbeitungen\n• Widerruf einer erteilten Einwilligung mit Wirkung für die Zukunft\nZur Ausübung Ihrer Rechte genügt eine Mitteilung an privacy@habb.ch. Zudem haben Sie das Recht, sich bei der zuständigen Aufsichtsbehörde zu beschweren – in der Schweiz beim Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB)."
+      },
+      "international": {
+        "title": "Datenübermittlung ins Ausland",
+        "content": "Soweit Daten in Länder ausserhalb der Schweiz oder des Europäischen Wirtschaftsraums übermittelt werden, stellen wir mit geeigneten Garantien – etwa Standardvertragsklauseln – sicher, dass ein angemessenes Datenschutzniveau gewährleistet bleibt."
+      },
+      "changes": {
+        "title": "Änderungen dieser Datenschutzerklärung",
+        "content": "Wir behalten uns vor, diese Datenschutzerklärung jederzeit anzupassen, um sie an geänderte Rechtslagen oder an Anpassungen unserer Dienstleistungen anzugleichen. Es gilt jeweils die auf dieser Website veröffentlichte Fassung."
       },
       "contact": {
         "title": "Kontakt",
-        "content": "Für datenschutzbezogene Anfragen wenden Sie sich bitte an unser Datenschutzteam."
+        "content": "Für Fragen zum Datenschutz oder zur Ausübung Ihrer Rechte wenden Sie sich bitte an Habb Switzerland unter privacy@habb.ch. Wir bearbeiten Ihr Anliegen so rasch wie möglich."
       }
     }
   },
@@ -255,28 +283,56 @@
     "lastUpdated": "Zuletzt aktualisiert: {date}",
     "sections": {
       "acceptance": {
-        "title": "Annahme der Bedingungen",
-        "content": "Durch den Zugriff auf diese Website akzeptieren Sie diese Geschäftsbedingungen."
+        "title": "Geltungsbereich",
+        "content": "Diese Allgemeinen Geschäftsbedingungen (AGB) regeln die Nutzung der Website www.habb.ch sowie alle Verträge und Dienstleistungen zwischen Habb Switzerland und ihren Kundinnen und Kunden.\nMit dem Zugriff auf die Website bzw. mit der Beauftragung einer Dienstleistung akzeptieren Sie diese AGB. Abweichende Bedingungen des Kunden gelten nur, wenn sie von Habb Switzerland ausdrücklich schriftlich anerkannt werden."
       },
       "services": {
-        "title": "Unsere Dienstleistungen",
-        "content": "Habb.ch bietet Technologielösungen und -dienste an. Für einzelne Dienste können besondere Bedingungen gelten."
+        "title": "Leistungen",
+        "content": "Habb Switzerland erbringt Technologie-, Software- und Beratungsdienstleistungen, einschliesslich der ERP- und Automatisierungslösung HABB One. Art und Umfang der Leistungen ergeben sich aus dem jeweiligen Angebot bzw. der individuellen Vereinbarung.\nUnsere Lösungen sind modular aufgebaut und können auf Anfrage an die Branche und die Prozesse des Kunden angepasst und erweitert werden."
+      },
+      "quotes": {
+        "title": "Angebote und Vertragsabschluss",
+        "content": "Angebote und Offerten von Habb Switzerland sind freibleibend, sofern nicht ausdrücklich anders vermerkt. Ein Vertrag kommt mit der schriftlichen Auftragsbestätigung durch Habb Switzerland oder mit dem Beginn der Leistungserbringung zustande.\nNebenabreden und Änderungen bedürfen zu ihrer Gültigkeit der schriftlichen Form."
+      },
+      "obligations": {
+        "title": "Mitwirkung des Kunden",
+        "content": "Der Kunde stellt Habb Switzerland alle für die Leistungserbringung erforderlichen Informationen, Unterlagen und Zugänge rechtzeitig und vollständig zur Verfügung und benennt eine zuständige Ansprechperson.\nVerzögerungen, die auf eine unzureichende Mitwirkung des Kunden zurückzuführen sind, gehen nicht zulasten von Habb Switzerland."
+      },
+      "prices": {
+        "title": "Preise und Zahlungsbedingungen",
+        "content": "Sofern nicht anders vereinbart, verstehen sich alle Preise in Schweizer Franken (CHF) zuzüglich der gesetzlichen Mehrwertsteuer. Massgebend sind die im jeweiligen Angebot genannten Preise.\nRechnungen sind innert 30 Tagen ab Rechnungsdatum ohne Abzug zahlbar. Bei Zahlungsverzug kann Habb Switzerland Verzugszinsen sowie angemessene Mahnspesen verrechnen."
       },
       "intellectual": {
-        "title": "Geistiges Eigentum",
-        "content": "Alle Inhalte dieser Website, einschliesslich Text, Grafiken und Software, sind Eigentum von Habb.ch und urheberrechtlich geschützt."
+        "title": "Geistiges Eigentum und Nutzungsrechte",
+        "content": "Sämtliche Inhalte dieser Website sowie alle von Habb Switzerland entwickelten Konzepte, Softwarekomponenten und Unterlagen sind urheberrechtlich geschützt und bleiben Eigentum von Habb Switzerland.\nDer Kunde erhält an den vereinbarten Arbeitsergebnissen ein nicht ausschliessliches, auf den vertraglichen Zweck beschränktes Nutzungsrecht, sofern nichts anderes schriftlich vereinbart wird."
+      },
+      "warranty": {
+        "title": "Gewährleistung",
+        "content": "Habb Switzerland erbringt ihre Leistungen mit der gebotenen Sorgfalt und nach anerkannten fachlichen Standards. Der Kunde prüft die Leistungen nach Erhalt und meldet allfällige Mängel unverzüglich.\nBei berechtigten Mängelrügen behebt Habb Switzerland den Mangel innert angemessener Frist durch Nachbesserung."
       },
       "liability": {
-        "title": "Haftungsbeschränkung",
-        "content": "Habb.ch haftet nicht für indirekte, zufällige oder Folgeschäden, die aus der Nutzung unserer Dienste entstehen."
+        "title": "Haftung",
+        "content": "Habb Switzerland haftet für Schäden nur bei Vorsatz oder grober Fahrlässigkeit. Die Haftung für leichte Fahrlässigkeit sowie für indirekte Schäden, Folgeschäden, entgangenen Gewinn oder Datenverlust ist – soweit gesetzlich zulässig – ausgeschlossen.\nFür Inhalte verlinkter Websites Dritter übernimmt Habb Switzerland keine Verantwortung."
+      },
+      "dataprotection": {
+        "title": "Datenschutz",
+        "content": "Habb Switzerland bearbeitet Personendaten im Einklang mit dem Schweizer Datenschutzgesetz und – soweit anwendbar – der DSGVO. Einzelheiten zur Datenbearbeitung sind in der Datenschutzerklärung geregelt."
+      },
+      "term": {
+        "title": "Vertragsdauer und Kündigung",
+        "content": "Die Dauer eines Vertrags richtet sich nach der individuellen Vereinbarung. Sofern nichts anderes vereinbart ist, kann ein Dauerschuldverhältnis von beiden Parteien unter Einhaltung einer angemessenen Frist schriftlich gekündigt werden. Das Recht zur ausserordentlichen Kündigung aus wichtigem Grund bleibt vorbehalten."
       },
       "governing": {
-        "title": "Anwendbares Recht",
-        "content": "Diese Bedingungen unterliegen dem Schweizer Recht. Streitigkeiten werden vor Schweizer Gerichten geklärt."
+        "title": "Anwendbares Recht und Gerichtsstand",
+        "content": "Diese AGB und sämtliche Verträge mit Habb Switzerland unterstehen ausschliesslich dem materiellen Schweizer Recht unter Ausschluss kollisionsrechtlicher Bestimmungen und des UN-Kaufrechts.\nAusschliesslicher Gerichtsstand ist der Sitz von Habb Switzerland, soweit das Gesetz keinen zwingenden anderen Gerichtsstand vorsieht."
       },
       "changes": {
-        "title": "Änderungen der Bedingungen",
-        "content": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Die weitere Nutzung gilt als Annahme der aktualisierten Bedingungen."
+        "title": "Änderungen der AGB",
+        "content": "Habb Switzerland behält sich vor, diese AGB jederzeit anzupassen. Massgebend ist die zum Zeitpunkt des Vertragsabschlusses bzw. der Websitenutzung gültige Fassung. Die jeweils aktuelle Version ist auf dieser Website veröffentlicht."
+      },
+      "severability": {
+        "title": "Salvatorische Klausel",
+        "content": "Sollten einzelne Bestimmungen dieser AGB ganz oder teilweise unwirksam sein oder werden, bleibt die Gültigkeit der übrigen Bestimmungen davon unberührt. Anstelle der unwirksamen Bestimmung gilt eine Regelung, die dem wirtschaftlichen Zweck am nächsten kommt."
       }
     }
   },

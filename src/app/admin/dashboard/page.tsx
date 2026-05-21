@@ -80,7 +80,7 @@ export default async function AdminDashboardPage() {
       {/* Welcome */}
       <div>
         <h2 className="text-2xl font-semibold text-habb-gray-900 mb-2">
-          Welcome to Habb.ch Admin
+          Welcome to Habb Switzerland Admin
         </h2>
         <p className="text-habb-gray-600">
           Manage your website content, blog posts, and FAQs from here.

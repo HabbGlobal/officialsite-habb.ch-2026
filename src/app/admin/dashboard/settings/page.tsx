@@ -28,7 +28,7 @@ export default function SettingsPage() {
             <div className="p-4 bg-habb-gray-50 rounded-lg text-sm text-habb-gray-600">
               <p className="font-medium text-habb-gray-900 mb-2">Current Configuration</p>
               <ul className="space-y-1">
-                <li>Site Name: <span className="text-habb-gray-900">Habb.ch</span></li>
+                <li>Site Name: <span className="text-habb-gray-900">Habb Switzerland</span></li>
                 <li>Default Language: <span className="text-habb-gray-900">English</span></li>
                 <li>Contact Email: <span className="text-habb-gray-900">info@habb.ch</span></li>
               </ul>

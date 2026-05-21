@@ -21,18 +21,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const baseUrl = getSiteUrl()
   const isGerman = locale === 'de'
   const title = isGerman
-    ? 'Habb Schweiz | KI-Automatisierung & Tech-Lösungen für Schweizer KMU'
+    ? 'Habb Switzerland | KI-Automatisierung & Tech-Lösungen für Schweizer KMU'
     : 'Habb Switzerland | AI Automation & Tech Solutions for Swiss SMEs'
   const description = isGerman
-    ? 'Habb Schweiz liefert KI-Automatisierung, Software und ERP-Lösungen für Schweizer KMU – entwickelt mit Schweizer Präzision, Qualität und Innovation.'
+    ? 'Habb Switzerland liefert KI-Automatisierung, Software und ERP-Lösungen für Schweizer KMU – entwickelt mit Schweizer Präzision, Qualität und Innovation.'
     : 'Habb Switzerland delivers AI automation, software and ERP solutions for Swiss SMEs – built with Swiss precision, quality and innovation.'
 
   return {
     title: { absolute: title },
     description,
     keywords: isGerman
-      ? ['Habb Schweiz', 'Habb Switzerland', 'KI-Automatisierung Schweiz', 'Technologie-Lösungen Schweiz', 'ERP Schweizer KMU', 'Software Schweiz']
-      : ['Habb Switzerland', 'Habb Schweiz', 'AI automation Switzerland', 'technology solutions Switzerland', 'ERP Swiss SME'],
+      ? ['Habb Switzerland', 'KI-Automatisierung Schweiz', 'Technologie-Lösungen Schweiz', 'ERP Schweizer KMU', 'Software Schweiz']
+      : ['Habb Switzerland', 'AI automation Switzerland', 'technology solutions Switzerland', 'ERP Swiss SME'],
     alternates: {
       canonical: `${baseUrl}/${locale}`,
       languages: {
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       locale: isGerman ? 'de_CH' : 'en_CH',
       alternateLocale: isGerman ? 'en_CH' : 'de_CH',
       type: 'website',
-      images: [{ url: '/logo.png', width: 1200, height: 630, alt: isGerman ? 'Habb Schweiz' : 'Habb Switzerland' }],
+      images: [{ url: '/logo.png', width: 1200, height: 630, alt: 'Habb Switzerland' }],
     },
     twitter: {
       card: 'summary_large_image',
