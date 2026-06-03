@@ -152,6 +152,8 @@
     "habbOne": {
       "badge": "New Product",
       "sectionTitle": "HABB One",
+      "metaTitle": "ERP Software for Swiss SMEs – Quotes, Orders & Invoices | HABB One",
+      "metaDescription": "HABB One is the modular ERP software for Swiss SMEs: quotations, orders, time tracking and QR invoices in one system – tailored to your industry. Request a no-obligation demo.",
       "productName": "HABB One – the intelligent ERP for Swiss SMEs",
       "tagline": "Create quotations, orders and invoices effortlessly – an intelligent ERP, tailored to your industry and processes.",
       "overviewTitle": "Product Overview",
@@ -163,7 +165,14 @@
       "ctaDescription": "HABB One is tailored individually to your company. Send us a no-obligation enquiry – we'll show you HABB One in a personal demo.",
       "teaserTitle": "HABB One – the intelligent ERP for your SME",
       "teaserText": "Quotations, orders and invoices easier than ever – tailored to your industry and processes. Send a no-obligation enquiry now.",
-      "teaserCta": "Learn more"
+      "teaserCta": "Learn more",
+      "industriesTitle": "One ERP for every industry",
+      "industriesIntro": "HABB One is industry-independent and tailored individually to your workflows. Whether trades, services, retail or manufacturing – you get an ERP system that fits your SME exactly.",
+      "industries": "[\"Trades & Crafts\",\"Body & Paint Shops\",\"Construction & Fit-Out\",\"Service Providers & Agencies\",\"Retail & Manufacturing\",\"Service & Maintenance\"]",
+      "benefitsTitle": "Your benefits with HABB One",
+      "benefits": "[\"All processes in one system – no more isolated tools and Excel sheets\",\"Create quotations, orders and QR invoices in just a few clicks\",\"Tailored individually to your industry and processes\",\"Productive from day one, bilingual (DE/EN) and Swiss-compliant\",\"Data hosted in the EU or, if preferred, in Switzerland – local on request\",\"Personal support from Switzerland\"]",
+      "faqTitle": "Frequently asked questions about HABB One",
+      "faq": "[{\"q\":\"What is HABB One?\",\"a\":\"HABB One is an intelligent ERP system for Swiss SMEs. It combines quotations, orders, invoices, time tracking, scheduling and reports in one solution and simplifies your daily operations.\"},{\"q\":\"Which companies is HABB One suitable for?\",\"a\":\"HABB One is suitable for small and medium-sized enterprises in any industry – from trades to service providers to commercial businesses. The system is tailored individually to your processes.\"},{\"q\":\"Can I create Swiss QR invoices with HABB One?\",\"a\":\"Yes. HABB One creates legally compliant Swiss QR invoices in just a few clicks – directly from the order and without media breaks.\"},{\"q\":\"Can HABB One be adapted to my industry?\",\"a\":\"Yes. HABB One is modular and is adapted and extended to your industry and workflows on request.\"},{\"q\":\"Where is my data hosted?\",\"a\":\"By default in the EU or, if preferred, in Switzerland. On request we offer local hosting and data stored exclusively in Switzerland – compliant with the Swiss FADP and the EU GDPR.\"},{\"q\":\"How much does HABB One cost?\",\"a\":\"As HABB One is tailored individually to your company, we prepare a suitable offer for you. Contact us for a no-obligation demo and quotation.\"}]"
     },
     "cta": {
       "title": "Need a Custom Solution?",

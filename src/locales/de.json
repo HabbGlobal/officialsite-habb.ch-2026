@@ -152,6 +152,8 @@
     "habbOne": {
       "badge": "Neues Produkt",
       "sectionTitle": "HABB One",
+      "metaTitle": "ERP-Software für Schweizer KMU – Offerten, Aufträge & Rechnungen | HABB One",
+      "metaDescription": "HABB One ist die modulare ERP-Software für Schweizer KMU: Offerten, Aufträge, Zeiterfassung und QR-Rechnungen in einem System – individuell auf Ihre Branche angepasst. Jetzt unverbindlich anfragen.",
       "productName": "HABB One – das intelligente ERP für Schweizer KMU",
       "tagline": "Offerten, Aufträge und Rechnungen kinderleicht erstellen – ein intelligentes ERP, individuell auf Ihre Branche und Prozesse angepasst.",
       "overviewTitle": "Produktübersicht",
@@ -163,7 +165,14 @@
       "ctaDescription": "HABB One wird individuell auf Ihr Unternehmen zugeschnitten. Fragen Sie unverbindlich an – wir zeigen Ihnen HABB One in einer persönlichen Demo.",
       "teaserTitle": "HABB One – das intelligente ERP für Ihr KMU",
       "teaserText": "Offerten, Aufträge und Rechnungen so einfach wie nie – individuell auf Ihre Branche und Prozesse zugeschnitten. Jetzt unverbindlich anfragen.",
-      "teaserCta": "Mehr erfahren"
+      "teaserCta": "Mehr erfahren",
+      "industriesTitle": "Ein ERP für jede Branche",
+      "industriesIntro": "HABB One ist branchenunabhängig und wird individuell auf Ihre Abläufe zugeschnitten. Ob Handwerk, Dienstleistung, Handel oder Produktion – Sie erhalten ein ERP-System, das genau zu Ihrem KMU passt.",
+      "industries": "[\"Handwerk & Gewerbe\",\"Carrosserie & Spritzwerk\",\"Bau & Ausbau\",\"Dienstleister & Agenturen\",\"Handel & Produktion\",\"Service & Wartung\"]",
+      "benefitsTitle": "Ihre Vorteile mit HABB One",
+      "benefits": "[\"Alle Prozesse in einem System – Schluss mit Insellösungen und Excel-Listen\",\"Offerten, Aufträge und QR-Rechnungen in wenigen Klicks erstellen\",\"Individuell auf Ihre Branche und Prozesse zugeschnitten\",\"Ab Tag 1 produktiv, zweisprachig (DE/EN) und schweizkonform\",\"Datenhaltung in der EU oder wahlweise in der Schweiz – auf Anfrage lokal\",\"Persönlicher Support aus der Schweiz\"]",
+      "faqTitle": "Häufige Fragen zu HABB One",
+      "faq": "[{\"q\":\"Was ist HABB One?\",\"a\":\"HABB One ist ein intelligentes ERP-System für Schweizer KMU. Es bündelt Offerten, Aufträge, Rechnungen, Zeiterfassung, Einsatzplanung und Berichte in einer Lösung und vereinfacht Ihre täglichen Abläufe.\"},{\"q\":\"Für welche Unternehmen eignet sich HABB One?\",\"a\":\"HABB One eignet sich für kleine und mittlere Unternehmen jeder Branche – vom Handwerksbetrieb über Dienstleister bis zum Gewerbe. Das System wird individuell auf Ihre Prozesse zugeschnitten.\"},{\"q\":\"Kann ich mit HABB One Schweizer QR-Rechnungen erstellen?\",\"a\":\"Ja. HABB One erstellt rechtskonforme Schweizer QR-Rechnungen mit wenigen Klicks – direkt aus dem Auftrag und ohne Medienbruch.\"},{\"q\":\"Lässt sich HABB One an meine Branche anpassen?\",\"a\":\"Ja. HABB One ist modular aufgebaut und wird auf Anfrage an Ihre Branche und Ihre Abläufe angepasst und erweitert.\"},{\"q\":\"Wo werden meine Daten gehostet?\",\"a\":\"Standardmässig in der EU oder wahlweise in der Schweiz. Auf Anfrage bieten wir lokales Hosting und eine ausschliesslich in der Schweiz gelagerte Datenhaltung – DSG- und DSGVO-konform.\"},{\"q\":\"Was kostet HABB One?\",\"a\":\"Da HABB One individuell auf Ihr Unternehmen zugeschnitten wird, erstellen wir Ihnen ein passendes Angebot. Kontaktieren Sie uns für eine unverbindliche Demo und Offerte.\"}]"
     },
     "cta": {
       "title": "Benötigen Sie eine individuelle Lösung?",
