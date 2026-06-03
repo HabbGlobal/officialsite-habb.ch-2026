@@ -139,7 +139,9 @@
     },
     "smartmail": {
       "sectionTitle": "HABB AI Solutions",
-        "productName": "HABB AI Solutions",
+      "metaTitle": "Email Automation & AI Quotations for SMEs | HABB AI Solutions",
+      "metaDescription": "HABB AI Solutions automates your email inbox: AI classifies messages and prepares quotations as ready drafts in your ERP software. FADP-compliant. Get in touch.",
+      "productName": "HABB AI Solutions – Email Automation for SMEs",
       "tagline": "Automatic Email Classification & AI Based Quotation Generation",
       "overviewTitle": "Product Overview",
       "overviewText": "HABB AI Solutions is an intelligent email automation solution for SMEs. The system analyses incoming emails, automatically detects invoices, quotation requests, general inquiries or spam, and processes them in a structured manner.\nComplete quotation requests are transferred directly to your accounting or ERP software and prepared as a draft. If information is missing, the AI automatically requests it via email. Employees only review the generated draft and send the quotation.\nData is stored either in Switzerland or Germany – fully compliant with DSG and GDPR.",
@@ -147,7 +149,14 @@
       "keyFeatures": "[{\"icon\":\"Mail\",\"title\":\"Automatic Email Classification\",\"description\":\"AI reliably detects invoices, quotation requests, general inquiries, and spam automatically.\"},{\"icon\":\"FileText\",\"title\":\"AI-Powered Quotation Generation\",\"description\":\"Complete quotation requests are prepared as ready-to-send drafts in your accounting or ERP software.\"},{\"icon\":\"Zap\",\"title\":\"Automatic Follow-Up Requests\",\"description\":\"If details are missing, the system automatically requests them from the sender via email.\"},{\"icon\":\"Database\",\"title\":\"ERP & Accounting Integration\",\"description\":\"Seamless connection to common ERP and accounting systems without manual effort.\"},{\"icon\":\"ShieldCheck\",\"title\":\"DSG & GDPR Compliant\",\"description\":\"Data stored in Switzerland or Germany – fully legally compliant.\"}]",
       "backToServices": "Back to Services",
       "ctaTitle": "Ready for Smart Email Automation?",
-        "ctaDescription": "Contact us today for a personal demo of HABB AI Solutions."
+      "ctaDescription": "Contact us today for a personal demo of HABB AI Solutions.",
+      "benefitsTitle": "Your benefits with HABB AI Solutions",
+      "benefits": "[\"Save hours every week – no more manual sorting of your inbox\",\"Quotations as ready drafts – just review and send\",\"Fewer errors thanks to automatic, structured capture\",\"Faster response times for your customers\",\"Seamless integration with your ERP and accounting software\",\"FADP- and GDPR-compliant – data in Switzerland or Germany\"]",
+      "howTitle": "How HABB AI Solutions works",
+      "howIntro": "From incoming email to finished quotation in four steps – fully automated and traceable at all times.",
+      "steps": "[{\"title\":\"Analyse the inbox\",\"description\":\"The AI reads incoming emails and automatically detects what they are about – quotation request, invoice, general inquiry or spam.\"},{\"title\":\"Classify automatically\",\"description\":\"Each message is assigned in a structured way and routed to the right process – without any manual sorting.\"},{\"title\":\"Create a draft quotation\",\"description\":\"Complete requests are prepared as a ready quotation draft in your ERP or accounting software. If details are missing, the AI asks for them automatically.\"},{\"title\":\"Review & send\",\"description\":\"Your employees simply review the draft and send the quotation – in minutes instead of hours.\"}]",
+      "faqTitle": "Frequently asked questions about HABB AI Solutions",
+      "faq": "[{\"q\":\"What is HABB AI Solutions?\",\"a\":\"HABB AI Solutions is an AI-powered email automation for SMEs. It classifies incoming emails automatically and turns quotation requests into ready drafts in your ERP or accounting software.\"},{\"q\":\"How does the AI help me with quotations?\",\"a\":\"Complete quotation requests are automatically prepared as a draft. If details are missing, the AI requests them from the sender by email. Your employees simply review and send.\"},{\"q\":\"Can HABB AI Solutions connect to my existing software?\",\"a\":\"Yes. HABB AI Solutions integrates seamlessly with common ERP and accounting systems, so data is transferred without manual effort.\"},{\"q\":\"Which companies is the solution suitable for?\",\"a\":\"Any SME with a high volume of emails – for example many quotation requests or invoices. The solution is tailored to your workflows.\"},{\"q\":\"Where is my data stored?\",\"a\":\"Either in Switzerland or Germany – fully compliant with the Swiss FADP and the EU GDPR.\"},{\"q\":\"How much does HABB AI Solutions cost?\",\"a\":\"As the solution is tailored individually to your processes, we prepare a suitable offer for you. Contact us for a no-obligation demo.\"}]"
     },
     "habbOne": {
       "badge": "New Product",
