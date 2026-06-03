@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description,
       url: `${baseUrl}/${locale}`,
       locale: isGerman ? 'de_CH' : 'en_CH',
-      alternateLocale: isGerman ? 'en_CH' : 'de_CH',
+      alternateLocale: [isGerman ? 'en_CH' : 'de_CH'],
       siteName: 'Habb Switzerland',
       type: 'website',
       images: [{ url: '/logo.png', width: 1200, height: 630, alt: 'Habb Switzerland' }],
