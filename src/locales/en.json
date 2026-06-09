@@ -189,7 +189,30 @@
       "benefitsTitle": "Your benefits with HABB One",
       "benefits": "[\"All processes in one system – no more isolated tools and Excel sheets\",\"Create quotations, orders and QR invoices in just a few clicks\",\"Tailored individually to your industry and processes\",\"Productive from day one, bilingual (DE/EN) and Swiss-compliant\",\"Data hosted in the EU or, if preferred, in Switzerland – local on request\",\"Personal support from Switzerland\"]",
       "faqTitle": "Frequently asked questions about HABB One",
-      "faq": "[{\"q\":\"What is HABB One?\",\"a\":\"HABB One is an intelligent ERP system for Swiss SMEs. It combines quotations, orders, invoices, time tracking, scheduling and reports in one solution and simplifies your daily operations.\"},{\"q\":\"Which companies is HABB One suitable for?\",\"a\":\"HABB One is suitable for small and medium-sized enterprises in any industry – from trades to service providers to commercial businesses. The system is tailored individually to your processes.\"},{\"q\":\"Can I create Swiss QR invoices with HABB One?\",\"a\":\"Yes. HABB One creates legally compliant Swiss QR invoices in just a few clicks – directly from the order and without media breaks.\"},{\"q\":\"Can HABB One be adapted to my industry?\",\"a\":\"Yes. HABB One is modular and is adapted and extended to your industry and workflows on request.\"},{\"q\":\"Where is my data hosted?\",\"a\":\"By default in the EU or, if preferred, in Switzerland. On request we offer local hosting and data stored exclusively in Switzerland – compliant with the Swiss FADP and the EU GDPR.\"},{\"q\":\"How much does HABB One cost?\",\"a\":\"As HABB One is tailored individually to your company, we prepare a suitable offer for you. Contact us for a no-obligation demo and quotation.\"}]"
+      "faq": "[{\"q\":\"What is HABB One?\",\"a\":\"HABB One is an intelligent ERP system for Swiss SMEs. It combines quotations, orders, invoices, time tracking, scheduling and reports in one solution and simplifies your daily operations.\"},{\"q\":\"Which companies is HABB One suitable for?\",\"a\":\"HABB One is suitable for small and medium-sized enterprises in any industry – from trades to service providers to commercial businesses. The system is tailored individually to your processes.\"},{\"q\":\"Can I create Swiss QR invoices with HABB One?\",\"a\":\"Yes. HABB One creates legally compliant Swiss QR invoices in just a few clicks – directly from the order and without media breaks.\"},{\"q\":\"Can HABB One be adapted to my industry?\",\"a\":\"Yes. HABB One is modular and is adapted and extended to your industry and workflows on request.\"},{\"q\":\"Where is my data hosted?\",\"a\":\"By default in the EU or, if preferred, in Switzerland. On request we offer local hosting and data stored exclusively in Switzerland – compliant with the Swiss FADP and the EU GDPR.\"},{\"q\":\"How much does HABB One cost?\",\"a\":\"As HABB One is tailored individually to your company, we prepare a suitable offer for you. Contact us for a no-obligation demo and quotation.\"}]",
+      "plans": {
+        "title": "Two ways to start with HABB One",
+        "intro": "Need just a time clock or the whole solution? Choose the entry point that fits your business – upgrade to the full ERP anytime.",
+        "vatNote": "Prices incl. 8.1% VAT.",
+        "trialNote": "Try free for 14 days – all modules active, no credit card required.",
+        "pricingLink": "See all plans & prices",
+        "time": {
+          "badge": "Time tracking only",
+          "price": "CHF 29",
+          "period": "/ month",
+          "tagline": "The simple time clock for your whole team – when you only want to record working hours.",
+          "features": "[\"Time clock via tablet & PIN\",\"Live attendance & manual corrections\",\"Breaks, home office, holidays & absences\",\"Balance and payroll export (PDF/Excel)\",\"Up to 10 employees\"]",
+          "cta": "Get started"
+        },
+        "erp": {
+          "badge": "Full ERP",
+          "price": "from CHF 49",
+          "period": "/ month",
+          "tagline": "The complete solution: from quotation to order to invoice – including time tracking.",
+          "features": "[\"CRM & order processing\",\"Quotations & Swiss QR invoices\",\"Scheduling & staff planning\",\"Reports & export\",\"All modules, individually extensible\"]",
+          "cta": "See prices"
+        }
+      }
     },
     "cta": {
       "title": "Need a Custom Solution?",

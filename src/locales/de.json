@@ -189,7 +189,30 @@
       "benefitsTitle": "Ihre Vorteile mit HABB One",
       "benefits": "[\"Alle Prozesse in einem System – Schluss mit Insellösungen und Excel-Listen\",\"Offerten, Aufträge und QR-Rechnungen in wenigen Klicks erstellen\",\"Individuell auf Ihre Branche und Prozesse zugeschnitten\",\"Ab Tag 1 produktiv, zweisprachig (DE/EN) und schweizkonform\",\"Datenhaltung in der EU oder wahlweise in der Schweiz – auf Anfrage lokal\",\"Persönlicher Support aus der Schweiz\"]",
       "faqTitle": "Häufige Fragen zu HABB One",
-      "faq": "[{\"q\":\"Was ist HABB One?\",\"a\":\"HABB One ist ein intelligentes ERP-System für Schweizer KMU. Es bündelt Offerten, Aufträge, Rechnungen, Zeiterfassung, Einsatzplanung und Berichte in einer Lösung und vereinfacht Ihre täglichen Abläufe.\"},{\"q\":\"Für welche Unternehmen eignet sich HABB One?\",\"a\":\"HABB One eignet sich für kleine und mittlere Unternehmen jeder Branche – vom Handwerksbetrieb über Dienstleister bis zum Gewerbe. Das System wird individuell auf Ihre Prozesse zugeschnitten.\"},{\"q\":\"Kann ich mit HABB One Schweizer QR-Rechnungen erstellen?\",\"a\":\"Ja. HABB One erstellt rechtskonforme Schweizer QR-Rechnungen mit wenigen Klicks – direkt aus dem Auftrag und ohne Medienbruch.\"},{\"q\":\"Lässt sich HABB One an meine Branche anpassen?\",\"a\":\"Ja. HABB One ist modular aufgebaut und wird auf Anfrage an Ihre Branche und Ihre Abläufe angepasst und erweitert.\"},{\"q\":\"Wo werden meine Daten gehostet?\",\"a\":\"Standardmässig in der EU oder wahlweise in der Schweiz. Auf Anfrage bieten wir lokales Hosting und eine ausschliesslich in der Schweiz gelagerte Datenhaltung – DSG- und DSGVO-konform.\"},{\"q\":\"Was kostet HABB One?\",\"a\":\"Da HABB One individuell auf Ihr Unternehmen zugeschnitten wird, erstellen wir Ihnen ein passendes Angebot. Kontaktieren Sie uns für eine unverbindliche Demo und Offerte.\"}]"
+      "faq": "[{\"q\":\"Was ist HABB One?\",\"a\":\"HABB One ist ein intelligentes ERP-System für Schweizer KMU. Es bündelt Offerten, Aufträge, Rechnungen, Zeiterfassung, Einsatzplanung und Berichte in einer Lösung und vereinfacht Ihre täglichen Abläufe.\"},{\"q\":\"Für welche Unternehmen eignet sich HABB One?\",\"a\":\"HABB One eignet sich für kleine und mittlere Unternehmen jeder Branche – vom Handwerksbetrieb über Dienstleister bis zum Gewerbe. Das System wird individuell auf Ihre Prozesse zugeschnitten.\"},{\"q\":\"Kann ich mit HABB One Schweizer QR-Rechnungen erstellen?\",\"a\":\"Ja. HABB One erstellt rechtskonforme Schweizer QR-Rechnungen mit wenigen Klicks – direkt aus dem Auftrag und ohne Medienbruch.\"},{\"q\":\"Lässt sich HABB One an meine Branche anpassen?\",\"a\":\"Ja. HABB One ist modular aufgebaut und wird auf Anfrage an Ihre Branche und Ihre Abläufe angepasst und erweitert.\"},{\"q\":\"Wo werden meine Daten gehostet?\",\"a\":\"Standardmässig in der EU oder wahlweise in der Schweiz. Auf Anfrage bieten wir lokales Hosting und eine ausschliesslich in der Schweiz gelagerte Datenhaltung – DSG- und DSGVO-konform.\"},{\"q\":\"Was kostet HABB One?\",\"a\":\"Da HABB One individuell auf Ihr Unternehmen zugeschnitten wird, erstellen wir Ihnen ein passendes Angebot. Kontaktieren Sie uns für eine unverbindliche Demo und Offerte.\"}]",
+      "plans": {
+        "title": "Zwei Wege, mit HABB One zu starten",
+        "intro": "Brauchen Sie nur eine Stempeluhr oder die ganze Lösung? Wählen Sie den Einstieg, der zu Ihrem Betrieb passt – jederzeit erweiterbar zum vollen ERP.",
+        "vatNote": "Preise inkl. 8.1 % MwSt.",
+        "trialNote": "14 Tage kostenlos testen – alle Module aktiv, keine Kreditkarte nötig.",
+        "pricingLink": "Alle Pläne & Preise ansehen",
+        "time": {
+          "badge": "Nur Zeiterfassung",
+          "price": "CHF 29",
+          "period": "/ Monat",
+          "tagline": "Die einfache Stempeluhr fürs ganze Team – wenn Sie nur die Arbeitszeit erfassen möchten.",
+          "features": "[\"Stempeluhr per Tablet & PIN\",\"Live-Anwesenheit & manuelle Korrekturen\",\"Pausen, Home-Office, Ferien & Absenzen\",\"Saldo- und Lohn-Export (PDF/Excel)\",\"Bis zu 10 Mitarbeitende\"]",
+          "cta": "Jetzt starten"
+        },
+        "erp": {
+          "badge": "Komplettes ERP",
+          "price": "ab CHF 49",
+          "period": "/ Monat",
+          "tagline": "Die ganze Lösung: von der Offerte über den Auftrag bis zur Rechnung – inklusive Zeiterfassung.",
+          "features": "[\"CRM & Auftragsabwicklung\",\"Offerten & Schweizer QR-Rechnungen\",\"Einsatz- & Personalplan\",\"Berichte & Export\",\"Alle Module, individuell erweiterbar\"]",
+          "cta": "Preise ansehen"
+        }
+      }
     },
     "cta": {
       "title": "Benötigen Sie eine individuelle Lösung?",

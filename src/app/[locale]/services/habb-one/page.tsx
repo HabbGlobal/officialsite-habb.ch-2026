@@ -80,6 +80,24 @@ export default async function HabbOnePage({ params }: PageProps) {
   const benefits = JSON.parse(t('services.habbOne.benefits') || '[]') as string[]
   const faq = JSON.parse(t('services.habbOne.faq') || '[]') as { q: string; a: string }[]
 
+  const PRICING_URL = 'https://one.habb.ch/pricing'
+  const timePlan = {
+    badge: t('services.habbOne.plans.time.badge'),
+    price: t('services.habbOne.plans.time.price'),
+    period: t('services.habbOne.plans.time.period'),
+    tagline: t('services.habbOne.plans.time.tagline'),
+    features: JSON.parse(t('services.habbOne.plans.time.features') || '[]') as string[],
+    cta: t('services.habbOne.plans.time.cta'),
+  }
+  const erpPlan = {
+    badge: t('services.habbOne.plans.erp.badge'),
+    price: t('services.habbOne.plans.erp.price'),
+    period: t('services.habbOne.plans.erp.period'),
+    tagline: t('services.habbOne.plans.erp.tagline'),
+    features: JSON.parse(t('services.habbOne.plans.erp.features') || '[]') as string[],
+    cta: t('services.habbOne.plans.erp.cta'),
+  }
+
   const iconMap: Record<string, React.ElementType> = {
     Clock,
     Users,
@@ -218,6 +236,94 @@ export default async function HabbOnePage({ params }: PageProps) {
                 <span className="text-lg text-habb-gray-700">{benefit}</span>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Plans Section: time-tracking only vs full ERP */}
+      <section className="section-padding bg-gradient-to-br from-habb-gray-50 via-white to-habb-gray-50">
+        <div className="container-wide">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-3xl font-bold text-habb-gray-900 mb-4">
+              {t('services.habbOne.plans.title')}
+            </h2>
+            <p className="text-lg text-habb-gray-600 leading-relaxed">
+              {t('services.habbOne.plans.intro')}
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
+            {/* Time-tracking only */}
+            <div className="flex flex-col rounded-2xl border-2 border-habb-gray-200 bg-white p-8">
+              <div className="flex items-center gap-2 mb-4">
+                <Clock className="w-5 h-5 text-swiss-red" />
+                <span className="text-sm font-semibold uppercase tracking-wider text-habb-gray-700">
+                  {timePlan.badge}
+                </span>
+              </div>
+              <div className="mb-2">
+                <span className="text-4xl font-bold text-habb-gray-900">{timePlan.price}</span>
+                <span className="text-habb-gray-500 ml-1">{timePlan.period}</span>
+              </div>
+              <p className="text-habb-gray-600 mb-6">{timePlan.tagline}</p>
+              <ul className="space-y-3 mb-8 flex-grow">
+                {timePlan.features.map((feature, i) => (
+                  <li key={i} className="flex items-start gap-3 text-habb-gray-700">
+                    <Check className="w-5 h-5 text-swiss-red flex-shrink-0 mt-0.5" />
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+              <a href={PRICING_URL} target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="w-full">
+                  {timePlan.cta}
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+            </div>
+
+            {/* Full ERP (highlighted) */}
+            <div className="flex flex-col rounded-2xl border-2 border-swiss-red bg-white p-8 shadow-xl relative">
+              <div className="flex items-center gap-2 mb-4">
+                <ShieldCheck className="w-5 h-5 text-swiss-red" />
+                <span className="text-sm font-semibold uppercase tracking-wider text-swiss-red">
+                  {erpPlan.badge}
+                </span>
+              </div>
+              <div className="mb-2">
+                <span className="text-4xl font-bold text-habb-gray-900">{erpPlan.price}</span>
+                <span className="text-habb-gray-500 ml-1">{erpPlan.period}</span>
+              </div>
+              <p className="text-habb-gray-600 mb-6">{erpPlan.tagline}</p>
+              <ul className="space-y-3 mb-8 flex-grow">
+                {erpPlan.features.map((feature, i) => (
+                  <li key={i} className="flex items-start gap-3 text-habb-gray-700">
+                    <Check className="w-5 h-5 text-swiss-red flex-shrink-0 mt-0.5" />
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+              <a href={PRICING_URL} target="_blank" rel="noopener noreferrer">
+                <Button className="w-full bg-swiss-red hover:bg-swiss-red-dark">
+                  {erpPlan.cta}
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+            </div>
+          </div>
+
+          <div className="text-center mt-8 space-y-2">
+            <p className="text-habb-gray-600">{t('services.habbOne.plans.trialNote')}</p>
+            <p className="text-sm text-habb-gray-400">{t('services.habbOne.plans.vatNote')}</p>
+            <a
+              href={PRICING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-swiss-red font-semibold hover:gap-3 transition-all"
+            >
+              {t('services.habbOne.plans.pricingLink')}
+              <ArrowRight className="w-5 h-5" />
+            </a>
           </div>
         </div>
       </section>
