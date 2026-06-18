@@ -382,6 +382,41 @@ export default async function HabbOnePage({ params }: PageProps) {
         </div>
       </section>
 
+      {/* Deep-Links zum HABB-One-Portal (SEO: gefolgte Links zu one.habb.ch) */}
+      <section className="section-padding bg-white">
+        <div className="container-wide">
+          <div className="max-w-3xl mb-8">
+            <h2 className="text-3xl font-bold text-habb-gray-900 mb-4">
+              {locale === 'de' ? 'HABB One direkt entdecken' : 'Explore HABB One directly'}
+            </h2>
+            <p className="text-lg text-habb-gray-600 leading-relaxed">
+              {locale === 'de'
+                ? 'Mehr zu den einzelnen Lösungen der HABB-One-Plattform — direkt auf one.habb.ch:'
+                : 'Learn more about the individual HABB One solutions — directly on one.habb.ch:'}
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { label: 'Zeiterfassung Schweiz', url: 'https://one.habb.ch/zeiterfassung-schweiz' },
+              { label: locale === 'de' ? 'ERP für Werkstätten' : 'ERP for workshops', url: 'https://one.habb.ch/erp-werkstatt' },
+              { label: 'QR-Rechnung Software', url: 'https://one.habb.ch/qr-rechnung-software' },
+              { label: locale === 'de' ? 'Alle Preise & Pakete' : 'All plans & pricing', url: 'https://one.habb.ch/pricing' },
+            ].map((l) => (
+              <a
+                key={l.url}
+                href={l.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-between gap-3 rounded-xl border border-habb-gray-200 bg-habb-gray-50 p-5 hover:border-swiss-red hover:bg-white transition-colors"
+              >
+                <span className="font-semibold text-habb-gray-900 leading-snug">{l.label}</span>
+                <ArrowRight className="w-5 h-5 text-swiss-red flex-shrink-0 transition-transform group-hover:translate-x-1" />
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="section-padding bg-habb-gray-900 text-white">
         <div className="container-wide text-center">

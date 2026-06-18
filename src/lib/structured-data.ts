@@ -40,7 +40,9 @@ export function organizationLd(locale: Locale) {
       contactType: 'customer service',
       availableLanguage: ['de', 'en'],
     },
-    sameAs: [] as string[],
+    // Verknüpfte Web-Property: das HABB-One-Produkt-Portal. Hilft Google,
+    // habb.ch und one.habb.ch als dieselbe Marke zu assoziieren.
+    sameAs: ['https://one.habb.ch'] as string[],
   }
 }
 
