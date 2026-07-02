@@ -1,5 +1,6 @@
 export { HeroSection } from './HeroSection'
 export { NewProductSection } from './NewProductSection'
+export { GastroProductSection } from './GastroProductSection'
 export { FeaturesSection } from './FeaturesSection'
 export { AboutSection } from './AboutSection'
 export { ServicesSection } from './ServicesSection'

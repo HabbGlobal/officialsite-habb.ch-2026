@@ -4,7 +4,7 @@ import { Locale } from '@/lib/i18n'
 import { getTranslations } from '@/lib/translations'
 import { buildPageMetadata } from '@/lib/seo'
 import { Button } from '@/components/ui'
-import { Cloud, Users, Code, Shield, Settings, Database, Check, ArrowRight } from 'lucide-react'
+import { Cloud, Users, Code, Shield, Settings, Database, Check, ArrowRight, UtensilsCrossed } from 'lucide-react'
 
 interface PageProps {
   params: Promise<{ locale: string }>
@@ -152,6 +152,34 @@ export default async function ServicesPage({ params }: PageProps) {
             <Link href={`/${locale}/services/habb-one`} className="flex-shrink-0">
               <Button size="lg">
                 {t('services.habbOne.teaserCta')}
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* HABB Gastro Product Highlight */}
+      <section className="section-padding bg-white">
+        <div className="container-wide">
+          <div className="rounded-2xl bg-habb-gray-50 border border-habb-gray-100 shadow-sm p-8 lg:p-12 flex flex-col lg:flex-row lg:items-center gap-8">
+            <div className="w-16 h-16 rounded-2xl bg-swiss-red/10 flex items-center justify-center flex-shrink-0">
+              <UtensilsCrossed className="w-8 h-8 text-swiss-red" />
+            </div>
+            <div className="flex-1">
+              <span className="inline-block text-sm font-semibold text-swiss-red uppercase tracking-widest mb-2">
+                {t('services.habbGastro.sectionTitle')}
+              </span>
+              <h2 className="text-2xl font-bold text-habb-gray-900 mb-3">
+                {t('services.habbGastro.teaserTitle')}
+              </h2>
+              <p className="text-lg text-habb-gray-600">
+                {t('services.habbGastro.teaserText')}
+              </p>
+            </div>
+            <Link href={`/${locale}/services/habb-gastro`} className="flex-shrink-0">
+              <Button size="lg">
+                {t('services.habbGastro.teaserCta')}
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>

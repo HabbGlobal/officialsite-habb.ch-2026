@@ -5,6 +5,7 @@
     "services": "Services",
     "habbOne": "HABB One",
     "smartmail": "HABB AI Solutions",
+    "habbGastro": "HABB Gastro",
     "blog": "Blog",
     "faq": "FAQ",
     "contact": "Contact"
@@ -118,32 +119,62 @@
     "cloud": {
       "title": "Cloud Infrastructure",
       "description": "Secure, scalable cloud solutions hosted in Swiss data centers. Enterprise-grade infrastructure with guaranteed data sovereignty and compliance.",
-      "features": ["Swiss Data Residency", "Auto-Scaling", "Disaster Recovery", "24/7 Monitoring"]
+      "features": [
+        "Swiss Data Residency",
+        "Auto-Scaling",
+        "Disaster Recovery",
+        "24/7 Monitoring"
+      ]
     },
     "consulting": {
       "title": "Technology Consulting",
       "description": "Strategic guidance from experienced professionals. We help you make informed decisions about your technology investments.",
-      "features": ["Digital Strategy", "Architecture Review", "Security Assessment", "Compliance Advisory"]
+      "features": [
+        "Digital Strategy",
+        "Architecture Review",
+        "Security Assessment",
+        "Compliance Advisory"
+      ]
     },
     "development": {
       "title": "Custom Development",
       "description": "Bespoke software solutions tailored to your unique business requirements. From concept to deployment and beyond.",
-      "features": ["Web Applications", "Mobile Apps", "API Development", "System Integration"]
+      "features": [
+        "Web Applications",
+        "Mobile Apps",
+        "API Development",
+        "System Integration"
+      ]
     },
     "security": {
       "title": "Cybersecurity",
       "description": "Comprehensive security services to protect your digital assets. Proactive threat detection and response.",
-      "features": ["Penetration Testing", "Security Audits", "Compliance Management", "Incident Response"]
+      "features": [
+        "Penetration Testing",
+        "Security Audits",
+        "Compliance Management",
+        "Incident Response"
+      ]
     },
     "managed": {
       "title": "Managed Services",
       "description": "End-to-end IT management so you can focus on your core business. Reliable support when you need it.",
-      "features": ["Infrastructure Management", "Help Desk Support", "Backup & Recovery", "Performance Optimization"]
+      "features": [
+        "Infrastructure Management",
+        "Help Desk Support",
+        "Backup & Recovery",
+        "Performance Optimization"
+      ]
     },
     "data": {
       "title": "Data Solutions",
       "description": "Unlock the power of your data with advanced analytics and intelligent insights.",
-      "features": ["Data Analytics", "Business Intelligence", "Machine Learning", "Data Governance"]
+      "features": [
+        "Data Analytics",
+        "Business Intelligence",
+        "Machine Learning",
+        "Data Governance"
+      ]
     },
     "smartmail": {
       "sectionTitle": "HABB AI Solutions",
@@ -214,6 +245,32 @@
           "cta": "See prices"
         }
       }
+    },
+    "habbGastro": {
+      "badge": "New Product",
+      "sectionTitle": "HABB Gastro",
+      "metaTitle": "Restaurant & Take-Away Software Switzerland | HABB Gastro",
+      "metaDescription": "HABB Gastro is the all-in-one platform for Swiss restaurants: QR ordering, POS, kitchen display, reservations and online ordering with TWINT – Swiss-hosted. Get in touch.",
+      "productName": "HABB Gastro – the all-in-one platform for your restaurant",
+      "tagline": "QR ordering, POS, kitchen display and reservations in one system – for restaurants, take-aways and street food.",
+      "overviewTitle": "Product Overview",
+      "overviewText": "HABB Gastro is the complete digital solution for Swiss hospitality – from ordering at the table to settling up at the till. Everything works together in one system, in real time.\nGuests scan the QR code at the table and order themselves; the order appears instantly on the kitchen display and at the till. Reservations, online orders and payments (TWINT, card, cash) all run through the same platform.\nWhether a fixed restaurant, a take-away or a street-food stand at a festival – HABB Gastro is tailored to your business. Bilingual (DE/EN), Swiss-compliant and hosted in Switzerland.",
+      "keyFeaturesTitle": "What HABB Gastro handles for you",
+      "keyFeatures": "[{\"icon\": \"QrCode\", \"title\": \"QR Table Ordering\", \"description\": \"Guests scan the QR code at the table and order themselves – the order goes straight to the kitchen and the till.\"}, {\"icon\": \"ChefHat\", \"title\": \"Kitchen Display (KDS)\", \"description\": \"All orders appear on the kitchen screen in real time – clear and without lost tickets.\"}, {\"icon\": \"CreditCard\", \"title\": \"POS & Payments\", \"description\": \"A full point of sale with TWINT, card and cash – including receipts via QR code or email.\"}, {\"icon\": \"CalendarCheck\", \"title\": \"Reservations\", \"description\": \"Table reservations with availability checks and automatic email confirmation.\"}, {\"icon\": \"ShoppingBag\", \"title\": \"Online Ordering & Take-Away\", \"description\": \"Optional online and pickup ordering with time slots – directly through your platform.\"}, {\"icon\": \"Settings\", \"title\": \"Menu & Team Management\", \"description\": \"Manage menu, prices, modifiers and staff centrally – with roles for admin, kitchen and till.\"}]",
+      "backToServices": "Back to Services",
+      "ctaTitle": "Ready to digitise your restaurant?",
+      "ctaDescription": "HABB Gastro is set up individually for your business. Send a no-obligation enquiry or explore the platform.",
+      "platformCta": "Explore the platform",
+      "teaserTitle": "HABB Gastro – the platform for your restaurant",
+      "teaserText": "QR ordering, POS, kitchen display and reservations in one system – for restaurants, take-aways and street food.",
+      "teaserCta": "Learn more",
+      "industriesTitle": "For every kind of hospitality",
+      "industriesIntro": "Whether a fixed venue or a mobile stand – HABB Gastro adapts to your business.",
+      "industries": "[\"Restaurants\", \"Take-away & snack bars\", \"Street food & food trucks\", \"Cafés & bars\", \"Catering & events\", \"Food festivals\"]",
+      "benefitsTitle": "Your benefits with HABB Gastro",
+      "benefits": "[\"One system instead of many isolated tools – ordering, kitchen, till and reservations work together\", \"Less staff effort: guests order themselves via QR code at the table\", \"Orders on the kitchen display in real time – no more lost tickets\", \"TWINT, card and cash – flexible payments, even mobile at a festival\", \"Tailored to your business: restaurant, take-away or street food\", \"Swiss-compliant, bilingual and hosted in Switzerland\"]",
+      "faqTitle": "Frequently asked questions about HABB Gastro",
+      "faq": "[{\"q\": \"What is HABB Gastro?\", \"a\": \"HABB Gastro is an all-in-one hospitality platform: QR table ordering, POS, kitchen display, reservations and online ordering in one system.\"}, {\"q\": \"Which businesses is HABB Gastro suitable for?\", \"a\": \"For restaurants, take-aways, street-food stands, cafés and catering. The platform is tailored individually to your business.\"}, {\"q\": \"Which payment methods are supported?\", \"a\": \"TWINT, card (via SumUp) and cash. Receipts are provided digitally via QR code or email.\"}, {\"q\": \"Can guests order at the table via QR code?\", \"a\": \"Yes. Guests scan the QR code at the table and order themselves; the order appears instantly on the kitchen display and at the till.\"}, {\"q\": \"Does HABB Gastro also work mobile at a festival?\", \"a\": \"Yes. A festival and street-food mode with an image-tile till works even without a fixed venue.\"}, {\"q\": \"Where is my data hosted?\", \"a\": \"In Switzerland (Zurich data centre) – compliant with the Swiss FADP.\"}]"
     },
     "cta": {
       "title": "Need a Custom Solution?",

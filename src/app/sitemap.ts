@@ -15,6 +15,7 @@ const ROUTES: RouteDef[] = [
   { path: '/services', priority: 0.9, changeFrequency: 'weekly' },
   { path: '/services/habb-one', priority: 0.9, changeFrequency: 'weekly' },
   { path: '/services/ai-solutions', priority: 0.9, changeFrequency: 'weekly' },
+  { path: '/services/habb-gastro', priority: 0.9, changeFrequency: 'weekly' },
   { path: '/about', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/blog', priority: 0.7, changeFrequency: 'daily' },
   { path: '/faq', priority: 0.6, changeFrequency: 'monthly' },

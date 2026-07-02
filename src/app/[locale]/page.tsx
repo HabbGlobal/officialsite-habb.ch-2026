@@ -6,6 +6,7 @@ import { JsonLd } from '@/components/JsonLd'
 import {
   HeroSection,
   NewProductSection,
+  GastroProductSection,
   FeaturesSection,
   AboutSection,
   ServicesSection,
@@ -67,6 +68,7 @@ export default async function HomePage({ params }: PageProps) {
       <JsonLd data={[organizationLd(locale), webSiteLd(locale)]} />
       <HeroSection locale={locale} />
       <NewProductSection locale={locale} />
+      <GastroProductSection locale={locale} />
       <FeaturesSection locale={locale} />
       <AboutSection locale={locale} />
       <ServicesSection locale={locale} />

@@ -25,6 +25,7 @@ export function Header({ locale }: HeaderProps) {
     { href: `/${locale}/services`, label: t('nav.services') },
     { href: `/${locale}/services/habb-one`, label: t('nav.habbOne') },
     { href: `/${locale}/services/ai-solutions`, label: t('nav.smartmail') },
+    { href: `/${locale}/services/habb-gastro`, label: t('nav.habbGastro') },
     { href: `/${locale}/blog`, label: t('nav.blog') },
     { href: `/${locale}/faq`, label: t('nav.faq') },
     { href: `/${locale}/contact`, label: t('nav.contact') },
