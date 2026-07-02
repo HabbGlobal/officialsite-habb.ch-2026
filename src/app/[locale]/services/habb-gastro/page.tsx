@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Locale } from '@/lib/i18n'
 import { getTranslations } from '@/lib/translations'
@@ -57,6 +58,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           'HABB Gastro',
         ]
 
+  // Product visual beats the generic logo for social sharing
+  meta.openGraph = { ...meta.openGraph, images: ['/gastro/overview.jpg'] }
+  meta.twitter = { ...meta.twitter, images: ['/gastro/overview.jpg'] }
+
   return meta
 }
 
@@ -76,6 +81,17 @@ export default async function HabbGastroPage({ params }: PageProps) {
   const industries = JSON.parse(t('services.habbGastro.industries') || '[]') as string[]
   const benefits = JSON.parse(t('services.habbGastro.benefits') || '[]') as string[]
   const faq = JSON.parse(t('services.habbGastro.faq') || '[]') as { q: string; a: string }[]
+
+  // Module visuals, aligned with the keyFeatures order (alt text reuses the
+  // localized feature titles): QR, kitchen, POS, reservations, takeaway, admin
+  const galleryImages = [
+    '/gastro/qr-bestellung.jpg',
+    '/gastro/kitchen.jpg',
+    '/gastro/pos.jpg',
+    '/gastro/reservation.jpg',
+    '/gastro/takeaway.jpg',
+    '/gastro/admin.jpg',
+  ].map((src, i) => ({ src, alt: keyFeatures[i]?.title ?? t('services.habbGastro.sectionTitle') }))
 
   const iconMap: Record<string, React.ElementType> = {
     QrCode,
@@ -135,25 +151,16 @@ export default async function HabbGastroPage({ params }: PageProps) {
                 </Link>
               </div>
             </div>
-            <div className="rounded-2xl bg-habb-gray-900 p-6 sm:p-10 shadow-2xl">
-              <div className="grid grid-cols-2 gap-4">
-                {keyFeatures.map((feature, i) => {
-                  const Icon = iconMap[feature.icon] ?? CheckCircle2
-                  return (
-                    <div
-                      key={i}
-                      className="flex flex-col gap-3 rounded-xl bg-white/5 p-5 border border-white/10"
-                    >
-                      <div className="w-10 h-10 rounded-lg bg-swiss-red/20 flex items-center justify-center">
-                        <Icon className="w-5 h-5 text-swiss-red" />
-                      </div>
-                      <span className="text-sm font-medium text-white leading-snug">
-                        {feature.title}
-                      </span>
-                    </div>
-                  )
-                })}
-              </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-habb-gray-100">
+              <Image
+                src="/gastro/overview.jpg"
+                alt={t('services.habbGastro.productName')}
+                width={1200}
+                height={1200}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="w-full h-auto object-cover"
+                priority
+              />
             </div>
           </div>
         </div>
@@ -202,8 +209,34 @@ export default async function HabbGastroPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* Module Gallery Section */}
       <section className="section-padding bg-habb-gray-50">
+        <div className="container-wide">
+          <h2 className="text-3xl font-bold text-habb-gray-900 mb-10 text-center">
+            {t('services.habbGastro.galleryTitle')}
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {galleryImages.map((image, i) => (
+              <div
+                key={i}
+                className="rounded-2xl overflow-hidden border border-habb-gray-200 bg-white shadow-sm hover:shadow-xl transition-shadow duration-300"
+              >
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={1200}
+                  height={1200}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="section-padding bg-white">
         <div className="container-wide">
           <h2 className="text-3xl font-bold text-habb-gray-900 mb-10 text-center">
             {t('services.habbGastro.benefitsTitle')}
@@ -220,7 +253,7 @@ export default async function HabbGastroPage({ params }: PageProps) {
       </section>
 
       {/* Industries Section */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-habb-gray-50">
         <div className="container-wide">
           <div className="max-w-3xl mb-10">
             <h2 className="text-3xl font-bold text-habb-gray-900 mb-4">
@@ -234,7 +267,7 @@ export default async function HabbGastroPage({ params }: PageProps) {
             {industries.map((industry, i) => (
               <span
                 key={i}
-                className="rounded-full border border-habb-gray-200 bg-habb-gray-50 px-5 py-2.5 text-base font-medium text-habb-gray-800"
+                className="rounded-full border border-habb-gray-200 bg-white px-5 py-2.5 text-base font-medium text-habb-gray-800"
               >
                 {industry}
               </span>
@@ -244,7 +277,7 @@ export default async function HabbGastroPage({ params }: PageProps) {
       </section>
 
       {/* FAQ Section */}
-      <section className="section-padding bg-habb-gray-50">
+      <section className="section-padding bg-white">
         <div className="container-wide">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold text-habb-gray-900 mb-10 text-center">
@@ -254,7 +287,7 @@ export default async function HabbGastroPage({ params }: PageProps) {
               {faq.map((item, i) => (
                 <details
                   key={i}
-                  className="group rounded-xl border border-habb-gray-200 bg-white p-6"
+                  className="group rounded-xl border border-habb-gray-200 bg-habb-gray-50 p-6"
                 >
                   <summary className="flex cursor-pointer items-center justify-between gap-4 font-semibold text-habb-gray-900 list-none">
                     {item.q}

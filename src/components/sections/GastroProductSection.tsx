@@ -1,18 +1,9 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { Locale } from '@/lib/i18n'
 import { getTranslations } from '@/lib/translations'
 import { Button } from '@/components/ui'
-import {
-  UtensilsCrossed,
-  ArrowRight,
-  QrCode,
-  ChefHat,
-  CreditCard,
-  CalendarCheck,
-  ShoppingBag,
-  Settings,
-  CheckCircle2,
-} from 'lucide-react'
+import { UtensilsCrossed, ArrowRight } from 'lucide-react'
 
 interface GastroProductSectionProps {
   locale: Locale
@@ -20,21 +11,6 @@ interface GastroProductSectionProps {
 
 export function GastroProductSection({ locale }: GastroProductSectionProps) {
   const t = getTranslations(locale)
-
-  const keyFeatures = JSON.parse(t('services.habbGastro.keyFeatures') || '[]') as {
-    icon: string
-    title: string
-    description: string
-  }[]
-
-  const iconMap: Record<string, React.ElementType> = {
-    QrCode,
-    ChefHat,
-    CreditCard,
-    CalendarCheck,
-    ShoppingBag,
-    Settings,
-  }
 
   return (
     <section className="section-padding bg-white">
@@ -68,26 +44,21 @@ export function GastroProductSection({ locale }: GastroProductSectionProps) {
             </div>
           </div>
 
-          {/* Right: feature grid */}
-          <div>
-            <div className="grid grid-cols-2 gap-4">
-              {keyFeatures.map((feature, i) => {
-                const Icon = iconMap[feature.icon] ?? CheckCircle2
-                return (
-                  <div
-                    key={i}
-                    className="flex flex-col gap-3 rounded-xl bg-habb-gray-50 p-5 border border-habb-gray-100"
-                  >
-                    <div className="w-10 h-10 rounded-lg bg-swiss-red/10 flex items-center justify-center">
-                      <Icon className="w-5 h-5 text-swiss-red" />
-                    </div>
-                    <span className="text-sm font-medium text-habb-gray-900 leading-snug">
-                      {feature.title}
-                    </span>
-                  </div>
-                )
-              })}
-            </div>
+          {/* Right: product visual */}
+          <div className="lg:pl-4">
+            <Link
+              href={`/${locale}/services/habb-gastro`}
+              className="block max-w-md mx-auto lg:mx-0 lg:ml-auto rounded-2xl overflow-hidden border border-habb-gray-100 shadow-xl hover:shadow-2xl transition-shadow duration-300"
+            >
+              <Image
+                src="/gastro/overview.jpg"
+                alt={t('services.habbGastro.teaserTitle')}
+                width={1200}
+                height={1200}
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="w-full h-auto object-cover"
+              />
+            </Link>
           </div>
         </div>
       </div>
