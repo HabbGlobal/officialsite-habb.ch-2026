@@ -22,8 +22,6 @@ interface PageProps {
   params: Promise<{ locale: string }>
 }
 
-const PLATFORM_URL = 'https://gastro.habb.ch'
-
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params
   const t = getTranslations(locale as Locale)
@@ -130,11 +128,11 @@ export default async function HabbGastroPage({ params }: PageProps) {
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>
-                <a href={PLATFORM_URL} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <Link href={`/${locale}/services`} className="w-full sm:w-auto">
                   <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                    {t('services.habbGastro.platformCta')}
+                    {t('services.habbGastro.backToServices')}
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="rounded-2xl bg-habb-gray-900 p-6 sm:p-10 shadow-2xl">
@@ -282,19 +280,12 @@ export default async function HabbGastroPage({ params }: PageProps) {
           <p className="text-lg text-habb-gray-300 mb-10 max-w-2xl mx-auto">
             {t('services.habbGastro.ctaDescription')}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href={`/${locale}/contact`} className="w-full sm:w-auto">
-              <Button size="lg" className="w-full sm:w-auto bg-swiss-red hover:bg-swiss-red-dark">
-                {t('common.contactUs')}
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
-            <a href={PLATFORM_URL} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto border-white/30 text-white hover:bg-white/10">
-                {t('services.habbGastro.platformCta')}
-              </Button>
-            </a>
-          </div>
+          <Link href={`/${locale}/contact`}>
+            <Button size="lg" className="bg-swiss-red hover:bg-swiss-red-dark">
+              {t('common.contactUs')}
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </section>
     </>

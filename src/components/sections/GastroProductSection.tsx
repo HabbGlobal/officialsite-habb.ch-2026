@@ -18,8 +18,6 @@ interface GastroProductSectionProps {
   locale: Locale
 }
 
-const PLATFORM_URL = 'https://gastro.habb.ch'
-
 export function GastroProductSection({ locale }: GastroProductSectionProps) {
   const t = getTranslations(locale)
 
@@ -62,11 +60,11 @@ export function GastroProductSection({ locale }: GastroProductSectionProps) {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
-              <a href={PLATFORM_URL} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+              <Link href={`/${locale}/contact`} className="w-full sm:w-auto">
                 <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                  {t('services.habbGastro.platformCta')}
+                  {t('common.contactUs')}
                 </Button>
-              </a>
+              </Link>
             </div>
           </div>
 
