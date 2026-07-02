@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Locale } from '@/lib/i18n'
 import { getTranslations } from '@/lib/translations'
@@ -60,6 +61,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
           'HABB One',
         ]
 
+  // Product visual beats the generic logo for social sharing
+  meta.openGraph = { ...meta.openGraph, images: ['/habb-one/promo.jpg'] }
+  meta.twitter = { ...meta.twitter, images: ['/habb-one/promo.jpg'] }
+
   return meta
 }
 
@@ -79,6 +84,23 @@ export default async function HabbOnePage({ params }: PageProps) {
   const industries = JSON.parse(t('services.habbOne.industries') || '[]') as string[]
   const benefits = JSON.parse(t('services.habbOne.benefits') || '[]') as string[]
   const faq = JSON.parse(t('services.habbOne.faq') || '[]') as { q: string; a: string }[]
+
+  // Module visuals; alt texts reuse the localized feature titles where the
+  // motif matches, the hosting visual gets its own description
+  const galleryImages = [
+    { src: '/habb-one/qr-rechnung.jpg', alt: keyFeatures[0]?.title },
+    { src: '/habb-one/crm-auftrag.jpg', alt: keyFeatures[1]?.title },
+    { src: '/habb-one/zeiterfassung.jpg', alt: keyFeatures[2]?.title },
+    { src: '/habb-one/einsatzplanung.jpg', alt: keyFeatures[3]?.title },
+    { src: '/habb-one/lohnabrechnung.jpg', alt: keyFeatures[4]?.title },
+    {
+      src: '/habb-one/swiss-hosting.jpg',
+      alt:
+        locale === 'de'
+          ? 'Gemacht für Schweizer Unternehmen – Hosting in Zürich, DSG-konform'
+          : 'Made for Swiss companies – hosted in Zurich, FADP-compliant',
+    },
+  ].map((img) => ({ ...img, alt: img.alt ?? t('services.habbOne.sectionTitle') }))
 
   const PRICING_URL = 'https://one.habb.ch/pricing'
   const timePlan = {
@@ -156,25 +178,16 @@ export default async function HabbOnePage({ params }: PageProps) {
                 </Link>
               </div>
             </div>
-            <div className="rounded-2xl bg-habb-gray-900 p-10 shadow-2xl">
-              <div className="grid grid-cols-2 gap-4">
-                {keyFeatures.map((feature, i) => {
-                  const Icon = iconMap[feature.icon] ?? CheckCircle2
-                  return (
-                    <div
-                      key={i}
-                      className="flex flex-col gap-3 rounded-xl bg-white/5 p-5 border border-white/10"
-                    >
-                      <div className="w-10 h-10 rounded-lg bg-swiss-red/20 flex items-center justify-center">
-                        <Icon className="w-5 h-5 text-swiss-red" />
-                      </div>
-                      <span className="text-sm font-medium text-white leading-snug">
-                        {feature.title}
-                      </span>
-                    </div>
-                  )
-                })}
-              </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-habb-gray-100">
+              <Image
+                src="/habb-one/overview-product.jpg"
+                alt={t('services.habbOne.productName')}
+                width={1122}
+                height={842}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="w-full h-auto object-cover"
+                priority
+              />
             </div>
           </div>
         </div>
@@ -223,8 +236,34 @@ export default async function HabbOnePage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* Module Gallery Section */}
       <section className="section-padding bg-habb-gray-50">
+        <div className="container-wide">
+          <h2 className="text-3xl font-bold text-habb-gray-900 mb-10 text-center">
+            {t('services.habbOne.galleryTitle')}
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {galleryImages.map((image, i) => (
+              <div
+                key={i}
+                className="rounded-2xl overflow-hidden border border-habb-gray-200 bg-white shadow-sm hover:shadow-xl transition-shadow duration-300"
+              >
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={960}
+                  height={1200}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="section-padding bg-white">
         <div className="container-wide">
           <h2 className="text-3xl font-bold text-habb-gray-900 mb-10 text-center">
             {t('services.habbOne.benefitsTitle')}

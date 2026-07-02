@@ -153,10 +153,10 @@ export default async function HabbGastroPage({ params }: PageProps) {
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-habb-gray-100">
               <Image
-                src="/gastro/overview.jpg"
+                src="/gastro/overview-product.jpg"
                 alt={t('services.habbGastro.productName')}
                 width={1200}
-                height={1200}
+                height={769}
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="w-full h-auto object-cover"
                 priority

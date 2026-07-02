@@ -48,13 +48,13 @@ export function GastroProductSection({ locale }: GastroProductSectionProps) {
           <div className="lg:pl-4">
             <Link
               href={`/${locale}/services/habb-gastro`}
-              className="block max-w-md mx-auto lg:mx-0 lg:ml-auto rounded-2xl overflow-hidden border border-habb-gray-100 shadow-xl hover:shadow-2xl transition-shadow duration-300"
+              className="block rounded-2xl overflow-hidden border border-habb-gray-100 shadow-xl hover:shadow-2xl transition-shadow duration-300"
             >
               <Image
-                src="/gastro/overview.jpg"
+                src="/gastro/overview-product.jpg"
                 alt={t('services.habbGastro.teaserTitle')}
                 width={1200}
-                height={1200}
+                height={769}
                 sizes="(max-width: 1024px) 100vw, 40vw"
                 className="w-full h-auto object-cover"
               />
