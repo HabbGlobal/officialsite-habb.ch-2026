@@ -31,16 +31,15 @@ export function Footer({ locale }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="mb-4 flex items-center gap-3">
-              <Link href={`/${locale}`} className="inline-block flex items-center gap-3">
+            <div className="mb-4">
+              <Link href={`/${locale}`} className="inline-block">
                 <Image
-                  src="/logo.png"
-                  alt="Habb Logo"
-                  width={80}
-                  height={24}
-                  className="h-8 w-auto"
+                  src="/brand/logo-full-white.png"
+                  alt="Habb Switzerland"
+                  width={800}
+                  height={303}
+                  className="h-12 w-auto"
                 />
-                <span className="text-lg font-semibold text-white">Habb<span className="text-swiss-red"> Switzerland</span></span>
               </Link>
             </div>
             <p className="text-habb-gray-400 text-sm leading-relaxed mb-6">

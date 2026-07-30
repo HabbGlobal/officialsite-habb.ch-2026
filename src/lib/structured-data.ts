@@ -20,8 +20,8 @@ export function organizationLd(locale: Locale) {
     name: orgName(locale),
     legalName: 'Habb',
     url: baseUrl,
-    logo: `${baseUrl}/logo.png`,
-    image: `${baseUrl}/logo.png`,
+    logo: `${baseUrl}/brand/logo-full.png`,
+    image: `${baseUrl}/brand/logo-full.png`,
     email: EMAIL,
     telephone: PHONE,
     address: {
