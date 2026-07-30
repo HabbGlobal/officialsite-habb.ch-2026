@@ -21,11 +21,6 @@ export const metadata: Metadata = {
     title: 'Habb Switzerland | Tech & AI Solutions',
     description: 'Enterprise-grade technology solutions built with Swiss precision.',
   },
-  icons: {
-    icon: '/logo.png',
-    apple: '/logo.png',
-    shortcut: '/logo.png',
-  },
   twitter: {
     card: 'summary_large_image',
     title: 'Habb Switzerland',

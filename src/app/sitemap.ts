@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { getSiteUrl } from '@/lib/site'
+import { supabase } from '@/lib/supabase'
 
 interface RouteDef {
   path: string
@@ -24,21 +25,62 @@ const ROUTES: RouteDef[] = [
   { path: '/terms', priority: 0.2, changeFrequency: 'yearly' },
 ]
 
-export default function sitemap(): MetadataRoute.Sitemap {
+/** Published blog posts, so search engines don't rely on internal links alone. */
+async function getPostEntries(): Promise<{ slug: string; lastModified: Date }[]> {
+  try {
+    const table = process.env.SUPABASE_POST_TABLE || 'Post'
+    const { data, error } = await supabase
+      .from(table)
+      .select('slug,updatedAt,createdAt')
+      .eq('published', true)
+    if (error) {
+      console.error('sitemap: fetch posts error', error)
+      return []
+    }
+    return (data || [])
+      .filter((p: { slug?: string }) => !!p.slug)
+      .map((p: { slug: string; updatedAt?: string; createdAt?: string }) => ({
+        slug: p.slug,
+        lastModified: new Date(p.updatedAt || p.createdAt || Date.now()),
+      }))
+  } catch (err) {
+    console.error('sitemap: getPostEntries error', err)
+    return []
+  }
+}
+
+function alternates(baseUrl: string, path: string) {
+  return {
+    languages: {
+      'de-CH': `${baseUrl}/de${path}`,
+      'en-CH': `${baseUrl}/en${path}`,
+      'x-default': `${baseUrl}/de${path}`,
+    },
+  }
+}
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = getSiteUrl()
   const now = new Date()
 
-  return ROUTES.map(({ path, priority, changeFrequency }) => ({
-    url: `${baseUrl}/de${path}`,
-    lastModified: now,
-    changeFrequency,
-    priority,
-    alternates: {
-      languages: {
-        'de-CH': `${baseUrl}/de${path}`,
-        'en-CH': `${baseUrl}/en${path}`,
-        'x-default': `${baseUrl}/de${path}`,
-      },
-    },
+  const staticEntries: MetadataRoute.Sitemap = ROUTES.map(
+    ({ path, priority, changeFrequency }) => ({
+      url: `${baseUrl}/de${path}`,
+      lastModified: now,
+      changeFrequency,
+      priority,
+      alternates: alternates(baseUrl, path),
+    })
+  )
+
+  const posts = await getPostEntries()
+  const postEntries: MetadataRoute.Sitemap = posts.map(({ slug, lastModified }) => ({
+    url: `${baseUrl}/de/blog/${slug}`,
+    lastModified,
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+    alternates: alternates(baseUrl, `/blog/${slug}`),
   }))
+
+  return [...staticEntries, ...postEntries]
 }

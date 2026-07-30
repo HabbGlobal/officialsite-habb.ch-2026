@@ -22,11 +22,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const baseUrl = getSiteUrl()
   const isGerman = locale === 'de'
   const title = isGerman
-    ? 'Habb Switzerland | KI-Automatisierung & Tech-Lösungen für Schweizer KMU'
-    : 'Habb Switzerland | AI Automation & Tech Solutions for Swiss SMEs'
+    ? 'Software & KI für Schweizer KMU | Habb Switzerland'
+    : 'Software & AI for Swiss SMEs | Habb Switzerland'
   const description = isGerman
-    ? 'Habb Switzerland liefert KI-Automatisierung, Software und ERP-Lösungen für Schweizer KMU – entwickelt mit Schweizer Präzision, Qualität und Innovation.'
-    : 'Habb Switzerland delivers AI automation, software and ERP solutions for Swiss SMEs – built with Swiss precision, quality and innovation.'
+    ? 'Individuelle Software-Lösungen und Prozessoptimierung mit KI für Schweizer KMU – plus eigene Produkte: HABB One (ERP) und HABB Gastro.'
+    : 'Custom software solutions and AI process optimisation for Swiss SMEs – plus our own products: HABB One (ERP) and HABB Gastro.'
 
   return {
     title: { absolute: title },
@@ -49,13 +49,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       locale: isGerman ? 'de_CH' : 'en_CH',
       alternateLocale: [isGerman ? 'en_CH' : 'de_CH'],
       type: 'website',
-      images: [{ url: '/logo.png', width: 1200, height: 630, alt: 'Habb Switzerland' }],
+      images: [{ url: isGerman ? '/og-default.jpg' : '/og-default-en.jpg', width: 1200, height: 630, alt: 'Habb Switzerland' }],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: ['/logo.png'],
+      images: [isGerman ? '/og-default.jpg' : '/og-default-en.jpg'],
     },
   }
 }

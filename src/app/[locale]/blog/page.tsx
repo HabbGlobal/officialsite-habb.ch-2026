@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { Locale } from '@/lib/i18n'
 import { getTranslations } from '@/lib/translations'
 import { buildPageMetadata } from '@/lib/seo'
+import { breadcrumbLd } from '@/lib/structured-data'
+import { JsonLd } from '@/components/JsonLd'
 import { supabase } from '@/lib/supabase'
 import { formatDate, getLocalizedContent, truncate } from '@/lib/utils'
 import { Card, CardContent } from '@/components/ui'
@@ -20,12 +22,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { locale } = await params
   const t = getTranslations(locale as Locale)
 
-  return buildPageMetadata({
+  const meta = buildPageMetadata({
     locale: locale as Locale,
     path: '/blog',
-    title: t('blog.title'),
+    title: t('blog.metaTitle'),
     description: t('blog.subtitle'),
   })
+
+  // Own SERP title (the page H1 stays the short label)
+  meta.title = { absolute: t('blog.metaTitle') }
+
+  return meta
 }
 
 async function getPosts() {
@@ -65,6 +72,14 @@ export default async function BlogPage({ params }: PageProps) {
 
   return (
     <>
+      <JsonLd
+        data={[
+          breadcrumbLd(locale, [
+            { name: t('nav.home'), path: '' },
+            { name: t('nav.blog'), path: '/blog' },
+          ]),
+        ]}
+      />
       {/* Hero Section */}
       <section className="section-padding bg-gradient-to-br from-habb-gray-50 via-white to-habb-gray-50">
         <div className="container-wide">

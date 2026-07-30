@@ -119,6 +119,9 @@ export function softwareApplicationLd(args: {
   name: string
   description: string
   path: string
+  /** Cheapest published monthly price in CHF. Omit when pricing is on request. */
+  lowPrice?: number
+  image?: string
 }) {
   const baseUrl = getSiteUrl()
   return {
@@ -130,13 +133,20 @@ export function softwareApplicationLd(args: {
     applicationCategory: 'BusinessApplication',
     operatingSystem: 'Web',
     inLanguage: ['de', 'en'],
-    offers: {
-      '@type': 'Offer',
-      availability: 'https://schema.org/InStock',
-      priceCurrency: 'CHF',
-      price: '0',
-      description: args.locale === 'de' ? 'Auf Anfrage' : 'On request',
-    },
+    ...(args.image ? { image: `${baseUrl}${args.image}` } : {}),
+    // Only declare a price when one is actually published. A "0" price
+    // would make search engines advertise the product as free.
+    ...(args.lowPrice !== undefined
+      ? {
+          offers: {
+            '@type': 'AggregateOffer',
+            availability: 'https://schema.org/InStock',
+            priceCurrency: 'CHF',
+            lowPrice: String(args.lowPrice),
+            url: `${baseUrl}/${args.locale}${args.path}`,
+          },
+        }
+      : {}),
     provider: { '@id': `${baseUrl}/#organization` },
   }
 }

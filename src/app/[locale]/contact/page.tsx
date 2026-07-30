@@ -15,12 +15,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { locale } = await params
   const t = getTranslations(locale as Locale)
 
-  return buildPageMetadata({
+  const meta = buildPageMetadata({
     locale: locale as Locale,
     path: '/contact',
-    title: t('contact.title'),
+    title: t('contact.metaTitle'),
     description: t('contact.subtitle'),
   })
+
+  // Own SERP title (the page H1 stays the short label)
+  meta.title = { absolute: t('contact.metaTitle') }
+
+  return meta
 }
 
 export default async function ContactPage({ params }: PageProps) {

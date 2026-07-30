@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { Locale } from '@/lib/i18n'
 import { getTranslations } from '@/lib/translations'
 import { buildPageMetadata } from '@/lib/seo'
+import { breadcrumbLd } from '@/lib/structured-data'
+import { JsonLd } from '@/components/JsonLd'
 import { Button } from '@/components/ui'
 import { Cloud, Users, Code, Shield, Settings, Zap, Check, ArrowRight, UtensilsCrossed } from 'lucide-react'
 
@@ -14,12 +16,17 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { locale } = await params
   const t = getTranslations(locale as Locale)
 
-  return buildPageMetadata({
+  const meta = buildPageMetadata({
     locale: locale as Locale,
     path: '/services',
-    title: t('services.hero.title'),
+    title: t('services.hero.metaTitle'),
     description: t('services.hero.subtitle'),
   })
+
+  // Full control over the SERP title (no brand suffix duplication)
+  meta.title = { absolute: t('services.hero.metaTitle') }
+
+  return meta
 }
 
 export default async function ServicesPage({ params }: PageProps) {
@@ -75,6 +82,14 @@ export default async function ServicesPage({ params }: PageProps) {
 
   return (
     <>
+      <JsonLd
+        data={[
+          breadcrumbLd(locale, [
+            { name: t('nav.home'), path: '' },
+            { name: t('nav.services'), path: '/services' },
+          ]),
+        ]}
+      />
       {/* Hero Section */}
       <section className="section-padding bg-gradient-to-br from-habb-gray-50 via-white to-habb-gray-50">
         <div className="container-wide">

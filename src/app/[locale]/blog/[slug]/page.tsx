@@ -7,7 +7,7 @@ import { buildPageMetadata } from '@/lib/seo'
 import { articleLd, breadcrumbLd } from '@/lib/structured-data'
 import { JsonLd } from '@/components/JsonLd'
 import { supabase } from '@/lib/supabase'
-import { formatDate, getLocalizedContent } from '@/lib/utils'
+import { formatDate, getLocalizedContent, stripBrandSuffix, sanitizeArticleHtml } from '@/lib/utils'
 import { Button } from '@/components/ui'
 import { ArrowLeft, Calendar, User } from 'lucide-react'
 
@@ -46,22 +46,31 @@ async function getPost(slug: string) {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale, slug } = await params
+  const t = getTranslations(locale as Locale)
   const post = await getPost(slug)
   
   if (!post) {
     return { title: 'Post Not Found', robots: { index: false, follow: true } }
   }
 
-  const title = getLocalizedContent(post.metaTitleEn || post.titleEn, post.metaTitleDe || post.titleDe, locale)
+  const rawTitle = getLocalizedContent(post.metaTitleEn || post.titleEn, post.metaTitleDe || post.titleDe, locale)
   const description = getLocalizedContent(post.metaDescEn || post.excerptEn, post.metaDescDe || post.excerptDe, locale)
+
+  const title = stripBrandSuffix(rawTitle)
+  // A description that merely repeats the headline wins no clicks
+  const cleanDescription = stripBrandSuffix(description || '')
+  const useDescription =
+    cleanDescription && cleanDescription !== title ? cleanDescription : t('blog.subtitle')
 
   const meta = buildPageMetadata({
     locale: locale as Locale,
     path: `/blog/${slug}`,
     title,
-    description: description || title,
+    description: useDescription,
     ogType: 'article',
   })
+
+  meta.title = { absolute: `${title} | Habb Switzerland` }
 
   if (post.imageUrl) {
     meta.openGraph = { ...meta.openGraph, images: [post.imageUrl] }
@@ -81,9 +90,9 @@ export default async function BlogPostPage({ params }: PageProps) {
     notFound()
   }
 
-  const title = getLocalizedContent(post.titleEn, post.titleDe, locale)
-  const content = getLocalizedContent(post.contentEn, post.contentDe, locale)
-  const description = getLocalizedContent(post.excerptEn, post.excerptDe, locale)
+  const title = stripBrandSuffix(getLocalizedContent(post.titleEn, post.titleDe, locale))
+  const content = sanitizeArticleHtml(getLocalizedContent(post.contentEn, post.contentDe, locale) || '')
+  const description = stripBrandSuffix(getLocalizedContent(post.excerptEn, post.excerptDe, locale) || '')
 
   return (
     <>

@@ -72,8 +72,8 @@
     }
   },
   "about": {
-    "metaTitle": "About Habb Switzerland – IT, Software & AI for Swiss SMEs",
-    "metaDescription": "Habb Switzerland builds AI automation, software and ERP solutions for Swiss SMEs. Get to know our story, our team and our values.",
+    "metaTitle": "About us – software & AI for SMEs | Habb Switzerland",
+    "metaDescription": "Habb Switzerland builds custom software solutions and optimises processes with AI. Get to know our team, our story and our values.",
     "hero": {
       "title": "About Habb Switzerland",
       "subtitle": "Swiss precision meets technological excellence"
@@ -118,7 +118,8 @@
   "services": {
     "hero": {
       "title": "Our Services",
-      "subtitle": "Custom software solutions and AI-powered process optimisation – built with Swiss precision."
+      "subtitle": "Custom software solutions and AI-powered process optimisation for Swiss SMEs – from consulting and development through to operations.",
+      "metaTitle": "Software Development & AI for SMEs | Habb Switzerland"
     },
     "cloud": {
       "title": "Cloud Infrastructure",
@@ -182,8 +183,8 @@
     },
     "smartmail": {
       "sectionTitle": "HABB AI Solutions",
-      "metaTitle": "Email Automation & AI Quotations for SMEs | HABB AI Solutions",
-      "metaDescription": "HABB AI Solutions automates your email inbox: AI classifies messages and prepares quotations as ready drafts in your ERP software. FADP-compliant. Get in touch.",
+      "metaTitle": "AI Email Automation for SMEs | HABB AI Solutions",
+      "metaDescription": "AI classifies your inbox and turns quotation requests into ready drafts in your ERP software. FADP-compliant. Get in touch.",
       "productName": "HABB AI Solutions – Email Automation for SMEs",
       "tagline": "Automatic Email Classification & AI Based Quotation Generation",
       "overviewTitle": "Product Overview",
@@ -204,8 +205,8 @@
     "habbOne": {
       "badge": "New Product",
       "sectionTitle": "HABB One",
-      "metaTitle": "ERP Software for Swiss SMEs – Quotes, Orders & Invoices | HABB One",
-      "metaDescription": "HABB One is the modular ERP software for Swiss SMEs: quotations, orders, time tracking and QR invoices in one system – tailored to your industry. Request a no-obligation demo.",
+      "metaTitle": "ERP Software for Swiss SMEs | HABB One",
+      "metaDescription": "HABB One: quotes, orders and QR invoices in one ERP – tailored to your industry. Time tracking from CHF 29, full ERP from CHF 115/month.",
       "productName": "HABB One – the intelligent ERP for Swiss SMEs",
       "tagline": "Create quotations, orders and invoices effortlessly – an intelligent ERP, tailored to your industry and processes.",
       "overviewTitle": "Product Overview",
@@ -254,8 +255,8 @@
     "habbGastro": {
       "badge": "New Product",
       "sectionTitle": "HABB Gastro",
-      "metaTitle": "Restaurant & Take-Away Software Switzerland | HABB Gastro",
-      "metaDescription": "HABB Gastro is the all-in-one platform for Swiss restaurants: QR ordering, POS, kitchen display, reservations and online ordering with TWINT – Swiss-hosted. Get in touch.",
+      "metaTitle": "Restaurant Software: POS, QR & Booking | HABB Gastro",
+      "metaDescription": "HABB Gastro: QR ordering, POS with TWINT, kitchen display and reservations in one system – for restaurants, take-aways and events.",
       "productName": "HABB Gastro – the all-in-one platform for your restaurant",
       "tagline": "QR ordering, POS, kitchen display and reservations in one system – for restaurants, take-aways and street food.",
       "overviewTitle": "Product Overview",
@@ -286,7 +287,8 @@
   },
   "blog": {
     "title": "Blog",
-    "subtitle": "Insights, news, and thought leadership from our experts",
+    "metaTitle": "Blog: AI, software & processes for SMEs | Habb Switzerland",
+    "subtitle": "Practical articles on AI automation, custom software and digital processes for Swiss SMEs.",
     "readMore": "Read More",
     "publishedOn": "Published on",
     "by": "by",
@@ -297,7 +299,8 @@
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "subtitle": "Find answers to common questions about our services",
+    "metaTitle": "FAQ – software, AI & hosting | Habb Switzerland",
+    "subtitle": "Answers about custom software development, AI process optimisation, Swiss hosting and our products HABB One and HABB Gastro.",
     "noFaqs": "No FAQs available.",
     "contact": {
       "title": "Still have questions?",
@@ -307,7 +310,8 @@
   },
   "contact": {
     "title": "Contact Us",
-    "subtitle": "Get in touch with our team",
+    "metaTitle": "Contact & request a consultation | Habb Switzerland",
+    "subtitle": "Talk to us about your project: custom software, AI process optimisation or a demo of HABB One and HABB Gastro.",
     "form": {
       "name": "Full Name",
       "email": "Email Address",

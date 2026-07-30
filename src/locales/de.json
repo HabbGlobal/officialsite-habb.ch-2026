@@ -72,8 +72,8 @@
     }
   },
   "about": {
-    "metaTitle": "Über Habb Switzerland – IT, Software & KI für Schweizer KMU",
-    "metaDescription": "Habb Switzerland entwickelt KI-Automatisierung, Software und ERP-Lösungen für Schweizer KMU. Lernen Sie unsere Geschichte, unser Team und unsere Werte kennen.",
+    "metaTitle": "Über uns – Software & KI für KMU | Habb Switzerland",
+    "metaDescription": "Habb Switzerland entwickelt individuelle Software-Lösungen und optimiert Prozesse mit KI. Lernen Sie unser Team, unsere Geschichte und Werte kennen.",
     "hero": {
       "title": "Über Habb Switzerland",
       "subtitle": "Schweizer Präzision trifft technologische Exzellenz"
@@ -118,7 +118,8 @@
   "services": {
     "hero": {
       "title": "Unsere Dienstleistungen",
-      "subtitle": "Kundenspezifische Software-Lösungen und Prozessoptimierung mit KI – entwickelt mit Schweizer Präzision."
+      "subtitle": "Individuelle Software-Lösungen und Prozessoptimierung mit KI für Schweizer KMU – von der Beratung über die Entwicklung bis zum Betrieb.",
+      "metaTitle": "Software-Entwicklung & KI für KMU | Habb Switzerland"
     },
     "cloud": {
       "title": "Cloud-Infrastruktur",
@@ -182,8 +183,8 @@
     },
     "smartmail": {
       "sectionTitle": "HABB AI Lösungen",
-      "metaTitle": "E-Mail-Automatisierung & KI-Offerten für KMU | HABB AI Lösungen",
-      "metaDescription": "HABB AI Lösungen automatisiert Ihren E-Mail-Eingang: KI klassifiziert Nachrichten und erstellt Offerten als fertige Entwürfe in Ihrer ERP-Software. DSG-konform. Jetzt anfragen.",
+      "metaTitle": "E-Mail-Automatisierung mit KI | HABB AI Lösungen",
+      "metaDescription": "KI klassifiziert Ihren E-Mail-Eingang und erstellt Offerten als fertige Entwürfe in Ihrer ERP-Software. DSG-konform. Jetzt anfragen.",
       "productName": "HABB AI Lösungen – E-Mail-Automatisierung für KMU",
       "tagline": "Automatische E-Mail-Klassifizierung & KI-gestützte Offertenerstellung",
       "overviewTitle": "Produktübersicht",
@@ -204,8 +205,8 @@
     "habbOne": {
       "badge": "Neues Produkt",
       "sectionTitle": "HABB One",
-      "metaTitle": "ERP-Software für Schweizer KMU – Offerten, Aufträge & Rechnungen | HABB One",
-      "metaDescription": "HABB One ist die modulare ERP-Software für Schweizer KMU: Offerten, Aufträge, Zeiterfassung und QR-Rechnungen in einem System – individuell auf Ihre Branche angepasst. Jetzt unverbindlich anfragen.",
+      "metaTitle": "ERP-Software für Schweizer KMU | HABB One",
+      "metaDescription": "HABB One: Offerten, Aufträge und QR-Rechnungen in einem ERP – individuell auf Ihre Branche zugeschnitten. Zeiterfassung ab CHF 29, ERP ab CHF 115/Mt.",
       "productName": "HABB One – das intelligente ERP für Schweizer KMU",
       "tagline": "Offerten, Aufträge und Rechnungen kinderleicht erstellen – ein intelligentes ERP, individuell auf Ihre Branche und Prozesse angepasst.",
       "overviewTitle": "Produktübersicht",
@@ -254,8 +255,8 @@
     "habbGastro": {
       "badge": "Neues Produkt",
       "sectionTitle": "HABB Gastro",
-      "metaTitle": "Gastro-Software für Restaurants & Take-Away | HABB Gastro",
-      "metaDescription": "HABB Gastro ist die All-in-One-Plattform für Schweizer Restaurants: QR-Bestellung, Kasse, Küchen-Display, Reservationen und Online-Bestellung mit TWINT – Swiss-hosted. Jetzt anfragen.",
+      "metaTitle": "Gastro-Software: Kasse, QR & Reservation | HABB Gastro",
+      "metaDescription": "HABB Gastro: QR-Bestellung, Kasse mit TWINT, Küchen-Display und Reservationen in einem System – für Restaurants, Take-Aways und Events.",
       "productName": "HABB Gastro – die All-in-One-Plattform für Ihre Gastronomie",
       "tagline": "QR-Bestellung, Kasse, Küchen-Display und Reservationen in einem System – für Restaurants, Take-Aways und Street-Food.",
       "overviewTitle": "Produktübersicht",
@@ -286,7 +287,8 @@
   },
   "blog": {
     "title": "Blog",
-    "subtitle": "Einblicke, Neuigkeiten und Thought Leadership von unseren Experten",
+    "metaTitle": "Blog: KI, Software & Prozesse für KMU | Habb Switzerland",
+    "subtitle": "Praxisnahe Beiträge zu KI-Automatisierung, individueller Software und digitalen Prozessen für Schweizer KMU.",
     "readMore": "Weiterlesen",
     "publishedOn": "Veröffentlicht am",
     "by": "von",
@@ -297,7 +299,8 @@
   },
   "faq": {
     "title": "Häufig gestellte Fragen",
-    "subtitle": "Antworten auf häufige Fragen zu unseren Dienstleistungen",
+    "metaTitle": "FAQ – Software, KI & Hosting | Habb Switzerland",
+    "subtitle": "Antworten zu individueller Software-Entwicklung, KI-Prozessoptimierung, Hosting in der Schweiz und unseren Produkten HABB One und HABB Gastro.",
     "noFaqs": "Keine FAQs verfügbar.",
     "contact": {
       "title": "Noch Fragen?",
@@ -307,7 +310,8 @@
   },
   "contact": {
     "title": "Kontakt",
-    "subtitle": "Nehmen Sie Kontakt mit unserem Team auf",
+    "metaTitle": "Kontakt & Beratung anfragen | Habb Switzerland",
+    "subtitle": "Sprechen Sie mit uns über Ihr Projekt: individuelle Software, KI-Prozessoptimierung oder eine Demo von HABB One und HABB Gastro.",
     "form": {
       "name": "Vollständiger Name",
       "email": "E-Mail-Adresse",

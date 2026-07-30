@@ -138,6 +138,9 @@ export default async function HabbOnePage({ params }: PageProps) {
             name: t('services.habbOne.productName'),
             description: t('services.habbOne.metaDescription'),
             path: '/services/habb-one',
+            // ERP entry price (CHF 29 is the time-tracking-only plan)
+            lowPrice: 115,
+            image: '/habb-one/promo.jpg',
           }),
           breadcrumbLd(locale, [
             { name: t('nav.home'), path: '' },

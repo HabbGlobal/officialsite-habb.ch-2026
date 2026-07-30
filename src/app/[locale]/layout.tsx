@@ -38,13 +38,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       alternateLocale: [isGerman ? 'en_CH' : 'de_CH'],
       siteName: 'Habb Switzerland',
       type: 'website',
-      images: [{ url: '/logo.png', width: 1200, height: 630, alt: 'Habb Switzerland' }],
+      images: [{ url: isGerman ? '/og-default.jpg' : '/og-default-en.jpg', width: 1200, height: 630, alt: 'Habb Switzerland' }],
     },
     twitter: {
       card: 'summary_large_image',
       title: siteTitle,
       description,
-      images: ['/logo.png'],
+      images: [isGerman ? '/og-default.jpg' : '/og-default-en.jpg'],
     },
   }
 }

@@ -19,12 +19,22 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { locale } = await params
   const t = getTranslations(locale as Locale)
 
-  return buildPageMetadata({
+  // An empty FAQ page is thin content and its description would promise
+  // answers that aren't there — keep it out of the index until it has entries.
+  const faqs = await getFAQs()
+
+  const meta = buildPageMetadata({
     locale: locale as Locale,
     path: '/faq',
-    title: t('faq.title'),
+    title: t('faq.metaTitle'),
     description: t('faq.subtitle'),
+    noindex: faqs.length === 0,
   })
+
+  // Own SERP title (the page H1 stays the short label)
+  meta.title = { absolute: t('faq.metaTitle') }
+
+  return meta
 }
 
 async function getFAQs() {

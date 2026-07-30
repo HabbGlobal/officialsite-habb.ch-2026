@@ -111,6 +111,7 @@ export default async function HabbGastroPage({ params }: PageProps) {
             name: t('services.habbGastro.productName'),
             description: t('services.habbGastro.metaDescription'),
             path: '/services/habb-gastro',
+            image: '/gastro/overview.jpg',
           }),
           breadcrumbLd(locale, [
             { name: t('nav.home'), path: '' },
