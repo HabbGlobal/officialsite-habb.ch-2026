@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { Locale } from '@/lib/i18n'
 import { getTranslations } from '@/lib/translations'
-import { Cloud, Users, Code, Shield, Settings, Database, ArrowRight } from 'lucide-react'
+import { Cloud, Users, Code, Shield, Settings, Zap, ArrowRight } from 'lucide-react'
 
 interface ServicesSectionProps {
   locale: Locale
@@ -10,12 +10,19 @@ interface ServicesSectionProps {
 export function ServicesSection({ locale }: ServicesSectionProps) {
   const t = getTranslations(locale)
 
+  // Core offering first: custom software & AI process optimisation
   const services = [
     {
-      icon: Cloud,
-      title: t('services.cloud.title'),
-      description: t('services.cloud.description'),
-      href: `/${locale}/services#cloud`,
+      icon: Code,
+      title: t('services.development.title'),
+      description: t('services.development.description'),
+      href: `/${locale}/services#development`,
+    },
+    {
+      icon: Zap,
+      title: t('services.data.title'),
+      description: t('services.data.description'),
+      href: `/${locale}/services#data`,
     },
     {
       icon: Users,
@@ -24,10 +31,10 @@ export function ServicesSection({ locale }: ServicesSectionProps) {
       href: `/${locale}/services#consulting`,
     },
     {
-      icon: Code,
-      title: t('services.development.title'),
-      description: t('services.development.description'),
-      href: `/${locale}/services#development`,
+      icon: Cloud,
+      title: t('services.cloud.title'),
+      description: t('services.cloud.description'),
+      href: `/${locale}/services#cloud`,
     },
     {
       icon: Shield,
@@ -40,12 +47,6 @@ export function ServicesSection({ locale }: ServicesSectionProps) {
       title: t('services.managed.title'),
       description: t('services.managed.description'),
       href: `/${locale}/services#managed`,
-    },
-    {
-      icon: Database,
-      title: t('services.data.title'),
-      description: t('services.data.description'),
-      href: `/${locale}/services#data`,
     },
   ]
 

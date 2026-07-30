@@ -8,7 +8,11 @@
     "habbGastro": "HABB Gastro",
     "blog": "Blog",
     "faq": "FAQ",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "products": "Produkte",
+    "allServices": "Alle Dienstleistungen",
+    "servicesDropdown": "[{\"key\": \"custom\", \"label\": \"Individuelle Software-Lösungen\", \"description\": \"Massgeschneiderte Software für Ihre Prozesse\"}, {\"key\": \"ai\", \"label\": \"KI & Prozessoptimierung\", \"description\": \"Abläufe automatisieren, Zeit sparen\"}, {\"key\": \"consulting\", \"label\": \"Technologieberatung\", \"description\": \"Strategie, Architektur & Umsetzung\"}]",
+    "productsDropdown": "[{\"key\": \"habb-one\", \"label\": \"HABB One\", \"description\": \"Das intelligente ERP für Schweizer KMU\"}, {\"key\": \"habb-gastro\", \"label\": \"HABB Gastro\", \"description\": \"Die All-in-One-Plattform für die Gastronomie\"}, {\"key\": \"ai-solutions\", \"label\": \"HABB AI Lösungen\", \"description\": \"E-Mail-Automatisierung mit KI\"}]"
   },
   "footer": {
     "company": "Habb Switzerland",
@@ -114,7 +118,7 @@
   "services": {
     "hero": {
       "title": "Unsere Dienstleistungen",
-      "subtitle": "Umfassende Technologielösungen für moderne Unternehmen"
+      "subtitle": "Kundenspezifische Software-Lösungen und Prozessoptimierung mit KI – entwickelt mit Schweizer Präzision."
     },
     "cloud": {
       "title": "Cloud-Infrastruktur",
@@ -137,7 +141,7 @@
       ]
     },
     "development": {
-      "title": "Individuelle Entwicklung",
+      "title": "Individuelle Software-Lösungen",
       "description": "Massgeschneiderte Softwarelösungen für Ihre einzigartigen Geschäftsanforderungen.",
       "features": [
         "Webanwendungen",
@@ -167,13 +171,13 @@
       ]
     },
     "data": {
-      "title": "Datenlösungen",
-      "description": "Erschliessen Sie die Macht Ihrer Daten mit fortschrittlicher Analytik.",
+      "title": "KI & Prozessoptimierung",
+      "description": "Wir analysieren Ihre Abläufe und automatisieren sie mit KI – weniger manuelle Arbeit, weniger Fehler, mehr Zeit fürs Kerngeschäft.",
       "features": [
-        "Datenanalyse",
-        "Business Intelligence",
-        "Machine Learning",
-        "Data Governance"
+        "Prozessanalyse & Digitalisierung",
+        "KI-Automatisierung von Abläufen",
+        "Individuelle KI-Integrationen",
+        "Datenanalyse & Business Intelligence"
       ]
     },
     "smartmail": {

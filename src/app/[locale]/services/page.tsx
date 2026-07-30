@@ -4,7 +4,7 @@ import { Locale } from '@/lib/i18n'
 import { getTranslations } from '@/lib/translations'
 import { buildPageMetadata } from '@/lib/seo'
 import { Button } from '@/components/ui'
-import { Cloud, Users, Code, Shield, Settings, Database, Check, ArrowRight, UtensilsCrossed } from 'lucide-react'
+import { Cloud, Users, Code, Shield, Settings, Zap, Check, ArrowRight, UtensilsCrossed } from 'lucide-react'
 
 interface PageProps {
   params: Promise<{ locale: string }>
@@ -27,13 +27,21 @@ export default async function ServicesPage({ params }: PageProps) {
   const locale = localeParam as Locale
   const t = getTranslations(locale)
 
+  // Core offering first: custom software & AI process optimisation
   const services = [
     {
-      id: 'cloud',
-      icon: Cloud,
-      title: t('services.cloud.title'),
-      description: t('services.cloud.description'),
-      features: JSON.parse(t('services.cloud.features') || '[]'),
+      id: 'development',
+      icon: Code,
+      title: t('services.development.title'),
+      description: t('services.development.description'),
+      features: JSON.parse(t('services.development.features') || '[]'),
+    },
+    {
+      id: 'data',
+      icon: Zap,
+      title: t('services.data.title'),
+      description: t('services.data.description'),
+      features: JSON.parse(t('services.data.features') || '[]'),
     },
     {
       id: 'consulting',
@@ -43,11 +51,11 @@ export default async function ServicesPage({ params }: PageProps) {
       features: JSON.parse(t('services.consulting.features') || '[]'),
     },
     {
-      id: 'development',
-      icon: Code,
-      title: t('services.development.title'),
-      description: t('services.development.description'),
-      features: JSON.parse(t('services.development.features') || '[]'),
+      id: 'cloud',
+      icon: Cloud,
+      title: t('services.cloud.title'),
+      description: t('services.cloud.description'),
+      features: JSON.parse(t('services.cloud.features') || '[]'),
     },
     {
       id: 'security',
@@ -62,13 +70,6 @@ export default async function ServicesPage({ params }: PageProps) {
       title: t('services.managed.title'),
       description: t('services.managed.description'),
       features: JSON.parse(t('services.managed.features') || '[]'),
-    },
-    {
-      id: 'data',
-      icon: Database,
-      title: t('services.data.title'),
-      description: t('services.data.description'),
-      features: JSON.parse(t('services.data.features') || '[]'),
     },
   ]
 

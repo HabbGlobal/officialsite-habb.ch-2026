@@ -8,7 +8,11 @@
     "habbGastro": "HABB Gastro",
     "blog": "Blog",
     "faq": "FAQ",
-    "contact": "Contact"
+    "contact": "Contact",
+    "products": "Products",
+    "allServices": "All services",
+    "servicesDropdown": "[{\"key\": \"custom\", \"label\": \"Custom Software Solutions\", \"description\": \"Tailor-made software for your processes\"}, {\"key\": \"ai\", \"label\": \"AI & Process Optimisation\", \"description\": \"Automate workflows, save time\"}, {\"key\": \"consulting\", \"label\": \"Technology Consulting\", \"description\": \"Strategy, architecture & delivery\"}]",
+    "productsDropdown": "[{\"key\": \"habb-one\", \"label\": \"HABB One\", \"description\": \"The intelligent ERP for Swiss SMEs\"}, {\"key\": \"habb-gastro\", \"label\": \"HABB Gastro\", \"description\": \"The all-in-one hospitality platform\"}, {\"key\": \"ai-solutions\", \"label\": \"HABB AI Solutions\", \"description\": \"Email automation with AI\"}]"
   },
   "footer": {
     "company": "Habb Switzerland",
@@ -114,7 +118,7 @@
   "services": {
     "hero": {
       "title": "Our Services",
-      "subtitle": "Comprehensive technology solutions for modern businesses"
+      "subtitle": "Custom software solutions and AI-powered process optimisation – built with Swiss precision."
     },
     "cloud": {
       "title": "Cloud Infrastructure",
@@ -137,7 +141,7 @@
       ]
     },
     "development": {
-      "title": "Custom Development",
+      "title": "Custom Software Solutions",
       "description": "Bespoke software solutions tailored to your unique business requirements. From concept to deployment and beyond.",
       "features": [
         "Web Applications",
@@ -167,13 +171,13 @@
       ]
     },
     "data": {
-      "title": "Data Solutions",
-      "description": "Unlock the power of your data with advanced analytics and intelligent insights.",
+      "title": "AI & Process Optimisation",
+      "description": "We analyse your workflows and automate them with AI – less manual work, fewer errors, more time for your core business.",
       "features": [
-        "Data Analytics",
-        "Business Intelligence",
-        "Machine Learning",
-        "Data Governance"
+        "Process analysis & digitisation",
+        "AI workflow automation",
+        "Custom AI integrations",
+        "Data analytics & business intelligence"
       ]
     },
     "smartmail": {
